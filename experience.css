@@ -1,0 +1,828 @@
+/*Google font links*/
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Mukta+Malar:wght@300&family=Sigmar&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Luckiest+Guy&family=Ubuntu+Mono&display=swap");
+/*Google font links*/
+
+html {
+  scroll-behavior: smooth;
+  max-width: 1500px;
+   
+}
+
+
+
+/*Navbar icon*/
+#nav-section {
+  position: relative;
+  
+  overflow: hidden;
+  width: 100%;
+}
+
+nav {
+    position: fixed;
+    left: 0%;
+    width: 100%;
+    z-index: 30;
+    border: 2px solid black;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 0;
+}
+
+nav .icon {
+  width: 50px;
+  margin-top: 30px;
+  margin-left: 150px;
+  background-color: rgb(180, 229, 255);
+  border-radius: 10px;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 10px;
+  width: 20%;
+}
+
+.dropdown:hover {
+  width: 91%;
+}
+
+.option {
+  width: 90%;
+  height: 4vh;
+  font-size: 25px;
+  font-family: "Sigmar", cursive;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  letter-spacing: 5px;
+  padding: 10px;
+  transition: 0.5s;
+  background-color: rgba(242, 252, 105, 0.656);
+}
+
+.option:hover {
+  font-size: 30px;
+  width: 91%;
+  height: 5vh;
+  background-color: rgb(180, 229, 255);
+}
+
+.option:nth-of-type(1):hover {
+  background-color: rgb(180, 229, 255);
+}
+
+.option:nth-of-type(2):hover {
+  background-color: orange;
+}
+
+.option:nth-of-type(3):hover {
+  background-color: rgb(120, 225, 120);
+}
+
+.option:nth-of-type(4):hover {
+  background-color: rgb(253, 156, 253);
+}
+
+.navbar .dropdown {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+
+.navbar:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+/* */
+
+/*Experience intro*/
+
+#experience {
+  position: relative;
+  overflow: hidden;
+}
+
+.amsterdam {
+  width: 100%;
+  transition: 1s ease-in-out;
+}
+
+.my-experience {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  border: double;
+  border-radius: 10px;
+  width: 40%;
+  text-align: center;
+  background-color: #b0e8f6e8;
+  padding-bottom: 20px;
+  box-shadow: 3px 5px 5px 1px;
+  transition: 1s ease-in-out;
+}
+
+#experience h1 {
+  font-size: 75px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  font-family: "Vina Sans";
+  transition: 1s ease-in-out;
+}
+
+#experience .info {
+  font-size: 28px;
+  font-family: "Concert One", cursive;
+  transition: 1s ease-in-out;
+}
+
+#experience span {
+  color: rgb(255, 255, 61);
+}
+
+#experience .description {
+  margin: 20px 10px 0px 10px;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Mukta Malar", sans-serif;
+  transition: 1s ease-in-out;
+}
+/* */
+
+/*Places visited section*/
+#visited {
+  background-color: #8bc8f9;
+}
+
+.states-map,
+.europe-map,
+.iceland-map,
+.puerto-rico-map {
+  width: 30%;
+  margin: 20px;
+  transition: 1s ease-in-out;
+}
+
+.states-info,
+.europe-info,
+.iceland-info,
+.puerto-rico-info {
+  background-color: rgb(255, 215, 145);
+  margin: 20px;
+  transition: 1s ease-in-out;
+}
+
+.states p,
+.europe p,
+.iceland p,
+.puerto-rico p {
+  font-size: 17px;
+  font-family: "Mukta Malar", sans-serif;
+  margin: 20px;
+  transition: 1s ease-in-out;
+}
+
+.states {
+  display: flex;
+}
+
+.states h2 {
+  font-size: 30px;
+  margin-left: 70%;
+}
+
+.europe {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.europe h2 {
+  font-size: 30px;
+  margin-left: 7%;
+}
+
+.iceland {
+  display: flex;
+}
+
+.iceland h2 {
+  font-size: 30px;
+  margin-left: 80%;
+}
+
+.puerto-rico {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.puerto-rico h2 {
+  font-size: 30px;
+  margin-left: 7%;
+}
+/* */
+
+/*Footer*/
+footer {
+  position: relative;
+  border: 2px solid rgba(0, 0, 0, 0.175);
+  display: flex;
+  background-color: rgba(186, 88, 88, 0.906);
+  overflow: hidden;
+}
+
+footer .logo {
+  display: block;
+  margin-right: auto;
+  width: 50%;
+  margin-left: 60%;
+  transition: 1s ease-in-out;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer .nav-list {
+  font-family: "Vina Sans";
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  line-height: 100px;
+}
+
+footer .media-icons {
+  width: 7%;
+  margin-left: auto;
+}
+
+footer .icon {
+  width: 100%;
+  height: 50px;
+  margin-top: 40px;
+  color: black;
+  background-color: bisque;
+  transition: 1s ease-in-out;
+}
+
+.icon:visited {
+  color: rgb(60, 138, 255);
+}
+
+.isaias {
+  position: absolute;
+
+  left: 0%;
+  bottom: 0%;
+}
+
+/* */
+
+@media screen and (max-width: 1200px) {
+  #nav-section {
+    right: 5%;
+  }
+
+  .option {
+    width: 110%;
+  }
+
+  .option:hover {
+    width: 115%;
+    font-size: 28px;
+  }
+
+  .my-experience {
+    top: 12%;
+    right: 5%;
+    width: 45%;
+  }
+
+  .states p,
+  .europe p,
+  .iceland p,
+  .puerto-rico p {
+    font-size: 17px;
+    line-height: 17px;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #nav-section {
+    right: 10%;
+  }
+
+  .dropdown {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  .my-experience {
+    top: 13%;
+    right: 5%;
+    width: 45%;
+  }
+
+  #experience h1 {
+    font-size: 50px;
+  }
+
+  #experience .info {
+    font-size: 20px;
+  }
+
+  #experience .description {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .states-map,
+  .europe-map,
+  .iceland-map,
+  .puerto-rico-map {
+    width: 27%;
+    margin: 20px;
+  }
+
+  .states p,
+  .europe p,
+  .iceland p,
+  .puerto-rico p {
+    font-size: 15px;
+  }
+
+  footer .logo {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #nav-section {
+    right: 15%;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+  }
+
+  nav .icon {
+    width: 35px;
+  }
+
+  .dropdown {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 90%;
+  }
+
+  .option {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .option:hover {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .amsterdam {
+    width: 120%;
+    margin-left: -130px;
+  }
+
+  .my-experience {
+    top: 12%;
+    right: 5%;
+    width: 45%;
+  }
+
+  #experience h1 {
+    font-size: 40px;
+  }
+
+  #experience .info {
+    font-size: 18px;
+  }
+
+  #experience .description {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  #visited {
+    background-color: #8bc8f9;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .states,
+  .europe,
+  .iceland,
+  .puerto-rico {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .states-map,
+  .europe-map,
+  .iceland-map,
+  .puerto-rico-map {
+    width: 90%;
+    margin: 20px auto -10px auto;
+  }
+
+  .states-info,
+  .europe-info,
+  .iceland-info,
+  .puerto-rico-info {
+    margin: 20px;
+    width: 90%;
+  }
+
+  .states p,
+  .europe p,
+  .iceland p,
+  .puerto-rico p {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 20px;
+  }
+
+  .states h2 {
+    font-size: 30px;
+    margin-left: 7%;
+  }
+
+  .iceland h2 {
+    font-size: 30px;
+    margin-left: 7%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #experience h1 {
+    font-size: 40px;
+  }
+
+  #experience .info {
+    font-size: 16px;
+  }
+
+  #experience .description {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  footer .logo {
+    width: 40%;
+    margin-left: 24%;
+  }
+
+  footer .nav-list {
+    font-size: 30px;
+    line-height: 80px;
+  }
+
+  footer .icon {
+    width: 100%;
+    height: 3vh;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #nav-section {
+    right: 20%;
+  }
+
+  .dropdown {
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+
+  .option {
+    font-size: 15px;
+    width: 100%;
+    height: 2vh;
+  }
+
+  .option:hover {
+    font-size: 17px;
+    width: 110%;
+    height: 3vh;
+  }
+
+  nav .icon {
+    border-radius: 5px;
+  }
+
+  .amsterdam {
+    width: 120%;
+    margin-left: -110px;
+  }
+
+  .my-experience {
+    top: 11%;
+    right: 5%;
+    width: 45%;
+  }
+
+  #visited {
+    background-color: #8bc8f9;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .states,
+  .europe,
+  .iceland,
+  .puerto-rico {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .states-map,
+  .europe-map,
+  .iceland-map,
+  .puerto-rico-map {
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .states-info,
+  .europe-info,
+  .iceland-info,
+  .puerto-rico-info {
+    margin: 20px auto 50px;
+    width: 95%;
+  }
+
+  .states p,
+  .europe p,
+  .iceland p,
+  .puerto-rico p {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #nav-section {
+    right: 23%;
+  }
+
+  .dropdown {
+    margin-top: 50px;
+    margin-left: 70px;
+  }
+
+  .option {
+    font-size: 13px;
+    width: 110%;
+    height: 2vh;
+  }
+
+  .option:hover {
+    font-size: 15px;
+    width: 120%;
+    height: 3vh;
+  }
+
+  .amsterdam {
+    width: 130%;
+    margin-left: -120px;
+  }
+
+  #experience h1 {
+    font-size: 30px;
+  }
+
+  #experience .info {
+    font-size: 14px;
+  }
+
+  #experience .description {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  footer .logo {
+    width: 30%;
+    margin-left: 24%;
+  }
+
+  footer .nav-list {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  footer .media-icons {
+    width: 10%;
+  }
+
+  footer .icon {
+    width: 100%;
+    margin-top: 1px;
+  }
+
+  .isaias {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #nav-section {
+    right: 33%;
+  }
+
+  nav .icon {
+    margin-top: 20px;
+    margin-left: 170px;
+  }
+
+  .dropdown {
+    margin-top: 40px;
+    margin-left: 100px;
+  }
+
+  .option {
+    font-size: 9px;
+    width: 90%;
+    height: 1vh;
+  }
+
+  .option:hover {
+    font-size: 12px;
+  }
+
+  .amsterdam {
+    width: 140%;
+    margin-left: -110px;
+  }
+
+  .my-experience {
+    top: 11%;
+    right: 5%;
+    width: 50%;
+  }
+
+  #experience h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  #experience .info {
+    font-size: 13px;
+  }
+
+  #experience .description {
+    font-size: 11px;
+    line-height: 12px;
+    margin-top: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer .logo {
+    width: 40%;
+    margin: auto;
+  }
+
+  footer .nav-list {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  footer .media-icons {
+    width: 70%;
+
+    margin: auto auto 10px auto;
+    border: 2px solid black;
+  }
+
+  footer .icon {
+    margin-top: 0px;
+  }
+
+  .isaias {
+    display: flex;
+    justify-content: center;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  nav .icon {
+    width: 23px;
+    margin-top: 10px;
+    margin-left: 150px;
+  }
+
+  .dropdown {
+    margin-top: 28px;
+    margin-left: 90px;
+  }
+  .option {
+    font-size: 9px;
+    width: 110%;
+    height: 1vh;
+  }
+
+  .option:hover {
+    width: 120%;
+    font-size: 12px;
+    height: 2vh;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #nav-section {
+    right: 34%;
+  }
+
+  nav .icon {
+    width: 20px;
+  }
+
+  .dropdown {
+    margin-top: 30px;
+    margin-left: 90px;
+  }
+
+  .option {
+    font-size: 7px;
+    width: 100%;
+    height: 0.5vh;
+  }
+
+  .option:hover {
+    font-size: 9px;
+    width: 110%;
+    height: 1vh;
+  }
+
+  .amsterdam {
+    width: 140%;
+    margin-left: -110px;
+  }
+
+  .my-experience {
+    top: 11%;
+    right: 5%;
+    width: 50%;
+  }
+
+  #experience h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  #experience .info {
+    font-size: 10px;
+  }
+
+  #experience .description {
+    font-size: 8px;
+    line-height: 12px;
+    margin-top: 10px;
+  }
+
+  .states h2,
+  .europe h2,
+  .iceland h2,
+  .puerto-rico h2 {
+    font-size: 25px;
+  }
+
+  .states p,
+  .europe p,
+  .iceland p,
+  .puerto-rico p {
+    font-size: 12px;
+    line-height: 17px;
+    margin: 20px;
+  }
+
+  .isaias {
+    font-size: 7px;
+  }
+}
+/**/

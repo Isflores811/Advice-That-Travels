@@ -1,0 +1,760 @@
+/*Google font links*/
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Mukta+Malar:wght@300&family=Sigmar&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Luckiest+Guy&family=Ubuntu+Mono&display=swap");
+/*Google font links*/
+
+html {
+  scroll-behavior: smooth;
+  max-width: 1500px;
+}
+
+/*Navbar icon*/
+#nav-section {
+  position: fixed;
+  right: 2%;
+  width: 16%;
+  height: 50vh;
+  z-index: 30;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 0;
+}
+
+nav .icon {
+  width: 50px;
+  margin-top: 30px;
+  margin-left: 150px;
+  background-color: rgb(180, 229, 255);
+  border-radius: 10px;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-left: 10px;
+  width: 90%;
+}
+
+.dropdown:hover {
+  width: 90%;
+}
+
+.option {
+  width: 90%;
+  height: 4vh;
+  font-size: 25px;
+  font-family: "Sigmar", cursive;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  letter-spacing: 5px;
+  padding: 10px;
+  transition: 0.5s;
+  background-color: rgba(242, 252, 105, 0.656);
+}
+
+.option:hover {
+  font-size: 30px;
+  width: 91%;
+  height: 5vh;
+  background-color: rgb(180, 229, 255);
+}
+
+.option:nth-of-type(1):hover {
+  background-color: rgb(180, 229, 255);
+}
+
+.option:nth-of-type(2):hover {
+  background-color: orange;
+}
+
+.option:nth-of-type(3):hover {
+  background-color: rgb(120, 225, 120);
+}
+
+.option:nth-of-type(4):hover {
+  background-color: rgb(253, 156, 253);
+}
+
+.navbar .dropdown {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+
+.navbar:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+/* */
+
+/* Contact intro*/
+
+#intro .sequoia {
+  width: 100%;
+  transition: 1s ease-in-out;
+}
+
+#intro p {
+  position: absolute;
+  width: 40%;
+  font-size: 40px;
+  top: 20%;
+  left: 5%;
+  font-family: "Concert One", cursive;
+  color: white;
+  transition: 1s ease-in-out;
+}
+
+#intro span {
+  color: rgb(255, 255, 61);
+}
+/* */
+
+/* User information & trip information input section*/
+
+#user-info {
+  position: relative;
+  background-color: #0b617e;
+  overflow: hidden;
+  margin-top: -4px;
+}
+
+#user-info h1 {
+  font-size: 75px;
+  font-family: "Vina Sans";
+  letter-spacing: 5px;
+  color: rgb(255, 255, 61);
+  margin-bottom: 10px;
+  transition: 1s ease-in-out;
+}
+
+.contact-details {
+  position: relative;
+  display: flex;
+}
+
+.message-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info {
+  width: 200%;
+  margin-left: 110px;
+  z-index: 1;
+  transition: 1s ease-in-out;
+}
+
+#user-info span {
+  font-size: 25px;
+  font-family: "Concert One", cursive;
+  color: rgb(247, 210, 0);
+  margin-bottom: 10px;
+}
+
+.basic-info {
+  width: 50%;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Mukta Malar", sans-serif;
+}
+
+#user-info h2 {
+  font-size: 25px;
+  font-family: "Concert One", cursive;
+  color: rgb(247, 210, 0);
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Mukta Malar", sans-serif;
+  transition: 1s ease-in-out;
+}
+
+#user-info button {
+  margin-top: 10px;
+  width: 200px;
+  height: 35px;
+  font-size: 20px;
+  background-color: rgb(247, 210, 0);
+  border-radius: 7px;
+  letter-spacing: 5px;
+  font-family: "Sigmar", cursive;
+}
+
+.plane {
+  position: absolute;
+  width: 100%;
+  top: 0%;
+  right: 20%;
+  rotate: 20deg;
+  z-index: 0;
+  transition: 1s ease-in-out;
+}
+
+.olympic-np {
+  position: relative;
+  float: right;
+  width: 93%;
+
+  z-index: 3;
+}
+/* */
+
+/* Footer*/
+
+footer {
+  position: relative;
+  border: 2px solid rgba(0, 0, 0, 0.175);
+  display: flex;
+  background-color: rgba(186, 88, 88, 0.906);
+  overflow: hidden;
+}
+
+footer .logo {
+  display: block;
+
+  margin-right: auto;
+  width: 50%;
+  margin-left: 60%;
+  transition: 1s ease-in-out;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer .nav-list {
+  font-family: "Vina Sans";
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  line-height: 100px;
+  transition: 1s ease-in-out;
+}
+
+footer .media-icons {
+  width: 7%;
+  margin-left: auto;
+}
+
+footer .icon {
+  width: 100%;
+  height: 5vh;
+  margin-top: 40px;
+  color: black;
+  background-color: bisque;
+  transition: 1s ease-in-out;
+}
+
+.icon:visited {
+  color: rgb(60, 138, 255);
+}
+
+.isaias {
+  position: absolute;
+
+  left: 0%;
+  bottom: 0%;
+}
+
+/*Media Queries */
+
+@media screen and (max-width: 1300px) {
+  .contact-info {
+    width: 200%;
+    margin-left: 100px;
+    z-index: 1;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #nav-section {
+    right: 5%;
+  }
+
+  .option {
+    width: 110%;
+  }
+
+  .option:hover {
+    width: 115%;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #nav-section {
+    right: 10%;
+  }
+
+  .dropdown {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  #intro p {
+    width: 40%;
+    font-size: 30px;
+    top: 15%;
+  }
+
+  .basic-info {
+    width: 90%;
+    height: 50px;
+  }
+
+  .plane {
+    width: 90%;
+    top: 25%;
+    right: 30%;
+    rotate: 20deg;
+    z-index: 0;
+  }
+
+  .contact-info {
+    width: 200%;
+    margin-top: -50px;
+    margin-left: 50px;
+    z-index: 1;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+  }
+
+  footer .logo {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #nav-section {
+    right: 15%;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+  }
+
+  nav .icon {
+    width: 35px;
+  }
+
+  .dropdown {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 90%;
+  }
+
+  .option {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .option:hover {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  #contact-info h1 {
+    font-size: 60px;
+  }
+
+  #basic-info {
+    width: 60%;
+    height: 40px;
+  }
+
+  .plane {
+    width: 90%;
+    top: 20%;
+    right: 30%;
+    rotate: 20deg;
+    z-index: 0;
+  }
+
+  .contact-info {
+    width: 200%;
+    margin-top: -50px;
+    margin-left: 50px;
+    z-index: 1;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .dropdown {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  #user-info {
+    position: relative;
+    overflow: hidden;
+    margin-top: -10px;
+  }
+
+  .contact-details {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #user-info h1 {
+    font-size: 40px;
+    margin-top: 60px;
+  }
+
+  #user-info span {
+    font-size: 25px;
+  }
+
+  .basic-info {
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  #user-info h2 {
+    font-size: 25px;
+  }
+
+  textarea {
+    width: 40%;
+    height: 150px;
+    font-size: 16px;
+  }
+
+  .plane {
+    width: 160%;
+    top: 0%;
+    right: -30%;
+    rotate: 20deg;
+  }
+
+  .olympic-np {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+    z-index: 3;
+  }
+
+  footer .logo {
+    width: 40%;
+    margin-left: 24%;
+  }
+
+  footer .nav-list {
+    font-size: 30px;
+    line-height: 80px;
+  }
+
+  footer .icon {
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #nav-section {
+    right: 20%;
+  }
+
+  .dropdown {
+    margin-top: 50px;
+    margin-left: 60px;
+  }
+
+  .option {
+    font-size: 15px;
+    width: 100%;
+    height: 20px;
+  }
+
+  .option:hover {
+    font-size: 17px;
+    width: 110%;
+    height: 30px;
+  }
+
+  nav .icon {
+    border-radius: 5px;
+  }
+
+  #intro p {
+    width: 40%;
+    font-size: 20px;
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #nav-section {
+    right: 23%;
+  }
+
+  .dropdown {
+    margin-top: 50px;
+    margin-left: 70px;
+  }
+
+  .option {
+    font-size: 13px;
+    width: 110%;
+    height: 2px;
+  }
+
+  .option:hover {
+    font-size: 15px;
+    width: 120%;
+    height: 30px;
+  }
+
+  footer .logo {
+    width: 30%;
+    margin-left: 24%;
+  }
+
+  footer .nav-list {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  footer .media-icons {
+    width: 10%;
+  }
+
+  footer .icon {
+    width: 100%;
+    margin-top: 1px;
+  }
+
+  .isaias {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #nav-section {
+    right: 33%;
+  }
+
+  nav .icon {
+    margin-top: 20px;
+    margin-left: 170px;
+  }
+
+  .dropdown {
+    margin-top: 40px;
+    margin-left: 100px;
+  }
+
+  .option {
+    font-size: 9px;
+    width: 90%;
+    height: 10px;
+  }
+
+  .option:hover {
+    font-size: 12px;
+  }
+
+  #intro {
+    height: 50vh;
+    overflow: hidden;
+  }
+
+  #intro .sequoia {
+    width: 190%;
+    margin-left: -100px;
+  }
+
+  #intro p {
+    width: 60%;
+    font-size: 20px;
+    top: 7%;
+  }
+
+  #user-info {
+    margin-top: -120px;
+  }
+
+  #user-info h1 {
+    font-size: 40px;
+  }
+
+  #user-info span {
+    font-size: 25px;
+  }
+
+  .basic-info {
+    width: 40%;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .contact-info {
+    margin-left: 20px;
+    z-index: 1;
+    transition: 1s ease-in-out;
+  }
+
+  #user-info h2 {
+    font-size: 25px;
+  }
+
+  textarea {
+    width: 45%;
+    height: 150px;
+    font-size: 16px;
+  }
+
+  #user-info button {
+    width: 20%;
+    height: 35px;
+    font-size: 4vw;
+  }
+
+  .plane {
+    width: 160%;
+    top: 10%;
+    right: -30%;
+    rotate: 20deg;
+  }
+
+  .olympic-np {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+    z-index: 3;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer .logo {
+    width: 40%;
+    margin: auto;
+  }
+
+  footer .nav-list {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  footer .media-icons {
+    width: 70%;
+    margin: auto auto 10px auto;
+    border: 2px solid black;
+  }
+
+  footer .icon {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .isaias {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  nav .icon {
+    width: 23px;
+    margin-top: 10px;
+    margin-left: 150px;
+  }
+
+  .dropdown {
+    margin-top: 28px;
+    margin-left: 90px;
+  }
+  .option {
+    font-size: 9px;
+    width: 110%;
+    height: 100px;
+  }
+
+  .option:hover {
+    width: 120%;
+    font-size: 12px;
+    height: 20vh;
+  }
+
+  #intro .sequoia {
+    width: 210%;
+    margin-left: -100px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #nav-section {
+    right: 34%;
+  }
+
+  nav .icon {
+    width: 20px;
+  }
+
+  .dropdown {
+    margin-top: 30px;
+    margin-left: 90px;
+  }
+
+  .option {
+    font-size: 7px;
+    width: 100%;
+    height: 5px;
+  }
+
+  .option:hover {
+    font-size: 9px;
+    width: 110%;
+    height: 10px;
+  }
+
+  #intro .sequoia {
+    width: 250%;
+    margin-left: -170px;
+  }
+
+  .isaias {
+    font-size: 7px;
+  }
+}
+
+/* */
