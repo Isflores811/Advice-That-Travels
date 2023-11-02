@@ -1,320 +1,3440 @@
-<!DOCTYPE html>
-<html lang="en">
+/*Google font links*/
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Mukta+Malar:wght@300&family=Sigmar&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Luckiest+Guy&family=Ubuntu+Mono&display=swap");
+/*Google font links*/
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Travel Advisor</title>
-  <link rel="stylesheet" href="home.css">
-</head>
+html {
+  scroll-behavior: smooth;
+  max-width: 1500px;
+}
 
-<!--Navbar icon-->
-<section id="nav-section">
-  <nav>
-    <div class="navbar">
+/*Navbar icon*/
+#nav-section {
+  position: fixed;
+  right: 2px;
+  width: 16%;
+  height: 50px;
+  z-index: 30;
+}
 
-      <a class="nav-center" href="#">
-        <img class="icon" src="img/icons8-menu-squared-100.png" alt="navbar icon" /></a>
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: wheat;
+  width: 0;
+}
 
-      <div class="dropdown">
-        <a href="" class="option">Home</a>
-        <a href="" class="option">Trips</a>
-        <a href="" class="option">Contact</a>
-      </div>
-    </div>
-  </nav>
-</section>
+nav .icon {
+  position: fixed;
+  width: 50px;
+  margin-top: 30px;
+  margin-left: 150px;
+  background-color: rgb(180, 229, 255);
+  border-radius: 10px;
+}
 
-<section id="opening">
-  <img class="austria" src="img/Me in Austria.JPG" alt="">
-  <div class="introduction">
-    <h1>Advice that Travels!</h1>
-    <h2><span>Here</span> for the newbies with the ambition to travel. <span>There</span> for the advice needed to make it happen!</h2>
-  </div>
-</section>
-<!---->
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-left: 10px;
+  width: 90%;
+}
 
-<main>
+.dropdown:hover {
+  width: 91%;
+}
 
-  <body>
-    <!--About Me Section-->
-    <section id="about-me">
+.option {
+  width: 90%;
+  height: 40px;
+  font-size: 25px;
+  font-family: "Sigmar", cursive;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  letter-spacing: 5px;
+  padding: 10px;
+  transition: 0.5s;
+  background-color: rgba(242, 252, 105, 0.656);
+}
 
-      <img class="iceland" src="img/Me in Iceland.png" alt="me in iceland" />
-      <img class="treeline" src="img/Tree background.png" alt="treeline">
-      <img class="pin" src="img/Pin for Picture.png" alt="pin">
+.option:hover {
+  font-size: 30px;
+  width: 91%;
+  height: 50px;
+  background-color: rgb(180, 229, 255);
+}
 
-      <img class="animated-map" src="img/Animated map.png" alt="animated map">
+.option:nth-of-type(1):hover {
+  background-color: rgb(180, 229, 255);
+}
 
-      <div class="opening">
-        <h1>WELCOME</h1>
-        <p>Hello fellow dreamers, My name is Isaias, and I'm on a mission to help you see the world without breaking the bank. I've been obsessed with travel since I was a kid, but it wasn't until after college that I really caught the bug to travel more. With a bit of saving and some creative planning, I've been lucky enough to explore some of the most incredible destinations on the planet - from the bustling streets of Amsterdam to the stunning landscapes of Glacer National Park.<br><br>
+.option:nth-of-type(2):hover {
+  background-color: orange;
+}
 
-          But here's the thing: I don't have a luxury job that lets me jet off whenever I please, and I don't have a trust fund that keeps my passport full of stamps. Nope, I'm just a regular person like you, working hard and dreaming big. But I've learned that with a bit of ingenuity and a willingness to step outside your comfort zone, a fantastic trip is always right around the corner<br><br>
+.option:nth-of-type(3):hover {
+  background-color: rgb(120, 225, 120);
+}
 
-          So that's why I started this travel advice website - to help you see the world, no matter what your budget or travel style. Whether you're looking for tips on finding the best deals, insider information on the most unique and offbeat destinations, or just some good old-fashioned travel inspiration, I've got you covered.</p>
-      </div>
+.navbar .dropdown {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}
 
-    </section>
-    <!---->
+.navbar:hover .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+/* */
 
-    <!--What kind of trip?-->
-    <section id="trip">
-      <div class="about-trip">
-        <h1>What kind of trip?</h1>
-        <p>If you're here now, chances are you already have a destination in mind or at least an idea of where you want to go. But now comes the fun part: deciding what kind of trip you want to take. And that's where I come in. Sometimes knowing where you want to go is the easy part - the challenge is figuring out how to make the most of your time there. That's why I like to split my trips into two categories: vacationing and traveling.<br><br>
+/* */
+#opening {
+  position: relative;
+}
 
-          Each style of travel has its own unique benefits, and maybe a combination of the two is what you're after. But ultimately, one tends to dominate the other. To help you decide which is right for you, I've broken down the key differences and advantages of each below. So let's dive in and discover the best way to make your dream trip a reality!</p>
-      </div>
-      <div class="trip-pics">
-        <img class="neahkahnie-mountain" src="img/neahkahnie mountain.png" alt="">
-        <img class="flaminngo-beach" src="img/flamingo beach.png" alt="">
-        <img class="climber" src="img/climber.png" alt="">
-        <img class="drinking" src="img/drinking.png" alt="">
-      </div>
-    </section>
-    <!---->
+.austria {
+  width: 100%;
+}
 
-    <!--Travel vs vacation-->
-    <section id="travel-vs-vacation">
-      <div class="vers-flex">
-        <ul class="travel">
-          <h1>Traveling</h1>
-          <li>
-            <h2>Experience More</h2>
-            This type of journey often yields multiple experiences at once, pushing you beyond your comfort zone and immersing you in the heart of adventure.
-          </li>
+.introduction {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  z-index: 1;
+}
 
-          <li>
-            <h2>Always On The Move</h2> While it may not appeal to everyone, constant movement is a vital component of travel that keeps the spirit of adventure alive. It enables you to thoroughly explore your destination while ensuring a restful night's sleep once the day's activities have concluded.
-          </li>
+#opening h1 {
+  font-size: 75px;
+  margin-bottom: 10px;
+  font-family: "Vina Sans", cursive;
+  line-height: 75px;
+  letter-spacing: 5px;
+  text-align: center;
+}
 
-          <li>
-            <h2>Flexibility</h2>Should you ever second-guess the itinerary you've chosen for your journey, the beauty of flexible travel is that you can readily pivot and continue your explorations. By making arrangements on the go instead of pre-planning every detail, you have the freedom to adjust your course if necessary while still enjoying a fantastic trip. I personally love spontaneous traveling, although it's worth noting that having some plans in place can be beneficial at times. Traveling empowers you to step outside your comfort zone and immerse yourself in experiences that the average vacationer might never encounter.
-          </li>
+#opening h2 {
+  text-align: center;
+  width: 60%;
+  font-size: 22px;
+  font-family: "Concert One", cursive;
+  line-height: 27px;
+  margin: auto;
+  color: white;
+}
 
-          <li>
-            <h2>Random Adventures and Things</h2> If you're eager to escape the hustle and bustle of the city and explore charming small towns, traveling is the perfect choice. By embarking on a journey, you can discover a new approach to experiencing your destination, uncovering hidden gems that may go unnoticed by the average vacationer. Traveling affords you the opportunity to relax and appreciate the smaller, more intimate aspects of your destination.
-          </li>
+h2 span {
+  color: rgb(255, 255, 61);
+}
+/* */
 
-          <li>
-            <h2>Transportation Is Key</h2>Getting around during your travels can greatly impact the amount of sights you're able to take in. The good news is, there are plenty of transportation options to choose from. Check out our transportation section to explore the various modes available and ensure you don't miss out on any of the excitement.
-          </li>
-        </ul>
+/*About Me Section*/
+#about-me {
+  position: relative;
+  display: flex;
+  background-color: #166d57;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
 
-        <div class="line"></div>
-        <ul class="vacation">
-          <h1>Vacationing</h1>
-          <li>
-            <h2>Stress Free</h2>One of the greatest benefits of taking a vacation is the opportunity to unwind and escape the stress of daily life. After all, relaxation is often the primary goal of any getaway. So if you're in need of a break from the hustle and bustle of everyday life, consider planning a vacation that allows you to focus on rest and relaxation.
-          </li>
+.iceland {
+  margin: 50px 20px 20px 50px;
+  width: 40%;
+  border-radius: 10px;
+  z-index: 2;
+  box-shadow: 2px 10px 20px 2px;
+  transition: 1s ease-in-out;
+}
 
-          <li>
-            <h2>Better for a Budget</h2>Whether you're looking for a luxurious escape or a more modest getaway tailored to your needs, a vacation can be customized to fit your preferences and budget. At the core of budgeting lies the art of finding all-inclusive deals, which can make your trip even more enjoyable and relaxing by offering options that let you leave your wallet behind. Planning ahead with a precise budget can be particularly helpful, as it allows you to know exactly what you're getting into and make the most of your trip.
-          </li>
+#about-me h1 {
+  position: relative;
+  width: auto;
+  font-family: "Concert One", cursive;
+  font-size: 45px;
+  margin-left: 10%;
+  background-color: rgb(252, 121, 121);
+  letter-spacing: 20px;
+  padding: 5px;
+  z-index: 2;
+}
 
-          <li>
-            <h2>Experience One Place to the Fullest</h2>A vacation focused on a single destination can offer a unique and immersive experience, allowing you to fully explore the area without worrying about transportation or getting around in taxis or Ubers. Without the stress of constantly moving from place to place, you can truly embrace the sights, sounds, and culture of your destination, making for a truly unforgettable vacation.
-          </li>
+#about-me p {
+  position: relative;
+  width: 80%;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: 600;
+  line-height: 30px;
+  margin: 5% 0% 5% 10%;
+  padding: 10px;
+  color: black;
+  background-color: #f5ea80;
+  border-radius: 10px;
+  z-index: 1;
+  box-shadow: -1px 9px 21px 1px black;
+  transition: 1s ease-in-out;
+}
 
-          <li>
-            <h2>Perfect for Shorterm</h2>For people with limited time, this type of trip can be an ideal solution. Whether due to a busy schedule or other commitments, not everyone has the luxury of taking extended vacations or lengthy breaks. However, by choosing a trip that focuses on a single destination or that offers all-inclusive packages, travelers can make the most of the time they have available.
-          </li>
+.treeline {
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  z-index: 1;
+  overflow: hidden;
+  opacity: 0.9;
+}
 
-          <li>
-            <h2>Family favorite</h2>If you're planning a family vacation, this kind of trip can be a great option regardless of your family's size and interests. Plus, there are often special deals available for families traveling together, such as discounts on group activities or bundled pricing for food and entertainment.
-          </li>
-        </ul>
+.animated-map {
+  position: absolute;
+  width: 30%;
+  right: 0%;
+  rotate: 30deg;
+  z-index: 0;
+}
 
-      </div>
+.pin {
+  position: absolute;
+  width: 3%;
+  height: 70px;
+  top: 3%;
+  left: 4%;
+  z-index: 2;
+  rotate: -60deg;
+  transition: 1s ease-in-out;
+}
 
-      <div class="travel-vacation-pics">
-        <img class="big-ben" src="img/big ben.png" alt="">
-        <img class="odda" src="img/odda.png" alt="">
-        <img class="company-logo" src="img/company-logo.png" alt="">
-        <img class="wave1" src="img/wave.png" alt="">
-        <img class="wave2" src="img/wave.png" alt="">
+/* */
 
-      </div>
-    </section>
-    <!---->
+/*What kind of trip?*/
+#trip {
+  position: relative;
+  background-color: #f7d8b9;
+  display: flex;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
 
-    <!---->
-    <section id="location">
-      <div class="location-description">
-        <div class="reality">
-          <h1>Location</h1>
-          <p>Selecting a destination to visit can be an enjoyable yet challenging task. The sheer number of options can be overwhelming, making the decision process difficult. However, it's essential to step outside your comfort zone and explore new horizons. For many adventurers, the opportunity to travel arises only once a year, underscoring the importance of thorough research to ensure a fulfilling experience. By carefully selecting your destination, you can optimize your travels and create unforgettable memories."
-          </p>
-        </div>
+.about-trip {
+  margin-left: 90px;
+}
 
-        <div class="advice">
-          <h2>Advice</h2>
-          <h3>Think about the place with the most options</h3>
-          <p>For me, the biggest factor in choosing a destination is often the amount of time I have available for my travels. If I only have a week to spare, I'll typically opt for a tropical island or a particular city, with a set itinerary that includes exploring local cuisine, enjoying the nightlife, attending events, or simply kicking back with a drink.
-            However, if I have a longer timeframe - say, two weeks - I'm keen to maximize my experiences and explore as much as possible. Such trips may entail visiting multiple cities or even countries, and by the end of it, I'll likely be exhausted. Yet, the satisfaction of knowing I've made the most of my time off is incredibly rewarding and borders on addictive.
-          </p>
-        </div>
-      </div>
+#trip h1 {
+  font-size: 50px;
+  width: 470px;
+  background-color: rgb(255, 187, 1);
+  padding-left: 10px;
+  font-family: "Luckiest Guy", cursive;
+  transition: 1s ease-in-out;
+}
 
-      <div class="location-pics">
-        <img class="gljufrabui" src="img/Gljufrabui, iceland.png" alt="">
-        <img class="camp-nou" src="img/camp nou.png" alt="">
-        <img class="lovcen" src="img/montenegro.png" alt="">
-        <img class="usa-shape" src="img/USA shape.png" alt="">
-        <img class="europe-shape" src="img/europe shape.png" alt="">
-        <img class="south-america-shape" src="img/south america shape.png" alt="">
-        <img class="australia-shape" src="img/australia shape.png" alt="">
-        <img class="africa-shape" src="img/africa shape.png" alt="">
-      </div>
-    </section>
-    <!---->
+#trip p {
+  position: relative;
+  font-size: 20px;
+  width: 35%;
+  padding: 10px;
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: 900;
+  background-color: rgba(255, 187, 1, 0.428);
+  z-index: 0;
+  transition: 1s ease-in-out;
+}
 
-    <!---->
+.neahkahnie-mountain {
+  position: absolute;
+  width: 23%;
+  right: 6%;
+  bottom: 36%;
+  rotate: -30deg;
+  z-index: 2;
+  box-shadow: 0px 0px 21px -5px black;
+  transition: 1s ease-in-out;
+}
 
-    <section id="transportation">
-      <h1>Transportation</h1>
-      <div class="transportation-description">
+.neahkahnie-mountain:hover {
+  rotate: 0deg;
+  width: 30%;
+  bottom: 30%;
+  z-index: 3;
+}
 
-        <div class="reality">
-          <p>Once you've arrived at your destination, it's essential to plan how you'll get around. For shorter trips, calling an Uber or utilizing your hotel's transportation services can be a more cost-effective option than renting a car. However, for avid travelers, transportation can make or break the trip. The key objective becomes 'how much can I see in the time I have,' and the means of transportation play a crucial role in achieving this goal. Each mode of transportation allows you to experience more and more of what the destination has to offer, making it a vital consideration when planning your travels.
-          </p>
-        </div>
-        <h2>Advice</h2>
-        <div class="advice">
-          <h3>Vactioning</h3>
-          <p>Based on my personal experience, using Uber is a convenient way to get around during a vacation. In smaller areas, walking, renting bikes, or utilizing transportation services like Uber can be sufficient for getting around. The advantages of this approach include not having to deal with the hassle of picking up or returning a rental car, avoiding fluctuating gas prices, and allowing you to indulge in alcohol consumption without worrying about driving under the influence. Choosing the right transportation method can greatly enhance the overall experience of your vacation.</p>
+.flaminngo-beach {
+  position: absolute;
+  width: 25%;
+  right: 25%;
+  bottom: 5%;
+  rotate: 10deg;
+  z-index: 2;
+  box-shadow: 0px 0px 21px -5px black;
+  transition: 1s ease-in-out;
+}
 
-          <h3>Traveling</h3>
-          <p>In my opinion, renting or leasing a car is the optimal way to explore a destination while traveling. While some people prefer using multiple plane rides or trains to get around, this approach often limits their experience to the towns or cities where their transportation drops them off. In contrast, having a car gives you the freedom to venture beyond urban areas and experience the more rural parts of the country or destination you're visiting. To me, this is the essence of truly immersing oneself in a destination and making the most of a trip.
-          </p>
-        </div>
-      </div>
-      <div class="transportation-pics">
-        <img class="road-sign" src="img/road sign.png" alt="">
-        <img class="plitvice-lakes-np" src="img/plitvice lakes.png" alt="">
-        <img class="glacier-np" src="img/glacier np.png" alt="">
-      </div>
-    </section>
-    <!---->
+.flaminngo-beach:hover {
+  rotate: 0deg;
+  width: 30%;
+  bottom: 10%;
+  z-index: 2;
+}
 
-    <!---->
-    <section id="lodging">
-      <div class="lodging-description">
-        <h1>Lodging</h1>
-        <div class="reality">
-          <p> Choosing the right lodging can be a make or break for your trip, especially if you end up sleeping in a haunted house or a hotel with bedbugs. So, to avoid any spooky surprises, always do your research and read those reviews! And if you're not trying to break the bank, don't worry, you can still find a place with great amenities without having to sell a kidney. Just remember, at the end of the day, a good night's sleep is crucial, unless you want to look like a sleep-deprived zombie on your adventure.</p>
-        </div>
-        <h2>Advice</h2>
-        <div class="advice">
-          <h3>Vacationing</h3>
-          <p>Selecting the right hotel for your vacation is crucial for a comfortable and enjoyable stay. Your lodging is your home away from home, so it's worth investing in a place that meets your expectations and budget. Consider looking for deals and promotions that fit your preferences, such as complimentary breakfast, spa services, or sightseeing packages. These add-ons not only save you money but also enhance your overall experience. As a bonus tip, take advantage of the free breakfast offered by many hotels - it's a perfect opportunity to fuel up for the day ahead and save money on meals. Plus, you can indulge guilt-free and splurge on a fancy dinner later. It's a win-win situation!
-          </p>
-          <h3>Traveling</h3>
-          <p> Finding the right place to stay while traveling can be tricky, but the rewards are worth it when you're able to visit a variety of destinations during your trip. When it comes to selecting a place to sleep, there are a few important factors to consider. First and foremost, establish your budget and then consult online reviews to help weed out the less-than-stellar options. Sometimes camping is a better choice than risking a shady hotel in a sketchy part of town.
-            If you're visiting a destination with hostels, compare prices to hotels before committing to a shared living space. While staying in a hostel can be a fun experience, the lack of privacy and noise level can interfere with much-needed rest. Another piece of advice is to hold off on booking a hotel until the day of your arrival. This may seem scary at first, but it can actually offer more flexibility and freedom. I've personally been to locations where I loved it so much that I wanted to stay longer, and by not having a hotel pre-booked, I was able to extend my stay without any hassle.</p>
-        </div>
-      </div>
-      <div class="lodging-pics">
-        <img class="hotel" src="img/hotel.png" alt="">
-        <img class="mardi-gras" src="img/mardi gras.png" alt="">
-        <img class="preikestolen" src="img/Preikestolen.png" alt="">
-      </div>
-    </section>
-    <!---->
+.climber {
+  position: absolute;
+  width: 8%;
+  right: 10%;
+  bottom: -15%;
+  z-index: 1;
+  transition: 1s ease-in-out;
+}
 
-    <!---->
-    <section id="solo-group">
-      <div class="solo-group-description">
-        <h1>Solo or Group Adventure?</h1>
-        <div class="reality">
-          <p>Traveling alone and traveling with a group are both great choices, each with their own unique advantages. Solo travel allows for more freedom, personal growth, and the opportunity to truly immerse oneself in the destination. Meanwhile, group travel offers the chance to bond with friends or family, share experiences, and divide costs. Ultimately, the choice depends on personal preferences and travel goals.
-          </p>
-        </div>
-        <h2>Advice</h2>
-        <div class="advice">
-          <p>Both options, traveling solo or with friends, have their benefits and drawbacks. Ultimately, it comes down to personal preference and what you want to gain from your trip. However, there are a few things to consider when making this decision.
-            Firstly, don't wait for someone else to join you on your trip. If you have the opportunity to travel but no one is available to come with you, don't let that stop you from going on a solo adventure. Traveling alone can be incredibly rewarding and allow you to have a more introspective and self-reliant experience. Don't let the fear of going alone hold you back from experiencing the world.</p>
-          <p>On the other hand, traveling with friends can be a great way to create lasting memories and share experiences with people you care about. When choosing who to travel with, it's important to consider their interests and mindset. You want to make sure that you are compatible travel companions who can compromise and make decisions together. It's no fun when everyone wants to do something different and you're stuck in a situation where no one is happy.
-            So, whether you choose to travel solo or with friends, make sure you're making the decision that's right for you. Don't let fear or pressure from others hold you back from exploring the world and creating unforgettable memories.</p>
-        </div>
-      </div>
-      <div class="solo-group-pics">
-        <img class="el-yunque" src="img/el yunque.png" alt="">
-        <img class="amalfi" src="img/amilifi.png" alt="">
-        <img class="escalator" src="img/escalator.png" alt="">
-      </div>
-    </section>
-    <!---->
+.drinking {
+  position: absolute;
+  width: 40%;
+  right: 20%;
+  bottom: 60%;
+  z-index: 1;
+  transition: 1s ease-in-out;
+}
+/* */
 
-    <!---->
-    <section id="document">
-      <div class="document-description">
-        <h1>Document Everything!</h1>
-        <div class="reality">
-          <p>Documenting a vacation or traveling trip can be just as important as the trip itself. Capturing memories through photos can last a lifetime and bring back all the special moments shared with loved ones. Not only is it important to take as many pictures as you can, but also to indulge in souvenirs and items unique to the destination. These items serve as tangible reminders of the experiences and emotions felt during the trip. In this way, documenting a trip is not just a way to preserve memories, but also a way to continue reliving them long after the trip has ended.</p>
-        </div>
+/*Travel vs vacation*/
 
-        <h2>Advice</h2>
-        <div class="advice">
-          <p>I can assure you, there will never be enough pictures or souvenirs to capture the essence of your trip. Personally, my phone is overflowing with over 10,000 photos and I used to think it was excessive. But as time passed, I realized that I wish I had more. Looking back, I wish I had bought more items from the places I visited and captured more moments. Memories may last a lifetime, but they can fade over time, so it's crucial to live in the moment and document everything. And don't be afraid to be the friend who takes endless pictures - trust me, your friends will appreciate it in the future.
-            My advice is to always do more, whether it's taking more pictures or collecting small mementos. I love the idea of collecting something small from each location you visit. Others might prefer to collect larger items and mail them back home to save space in their suitcases. It all depends on the person! And don't forget to take note of specific locations and activities that could help other travelers plan their trips in the future.</p>
-        </div>
-      </div>
-      <div class="document-pics">
-        <img class="leaning-tower" src="img/leaning tower.png" alt="">
-        <img class="plane-crash" src="img/plane crash.png" alt="">
-        <img class="zion" src="img/zion.png" alt="">
-      </div>
+#travel-vs-vacation {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  background-color: #e7ce29;
+  height: 1600px;
+  transition: 1s ease-in-out;
+}
 
-    </section>
+.travel {
+  width: 45%;
+  font-weight: 500;
+}
 
-    <section id="footer">
-      <footer>
-        <div class="footer-nav">
-          <ul>
-            <li>
-              <a class="nav-list" href="#">Home</a>
-            </li>
-            <li>
-              <a class="nav-list" href="#">Trips</a>
-            </li>
-            <li>
-              <a class="nav-list" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-img">
-          <img class="logo" src="img/company-logo.png" alt="">
-        </div>
+.vacation {
+  width: 50%;
+  font-weight: 500;
+}
 
-        <div class="media-icons">
-          <a class="media-list" href="https://twitter.com/" target="_blank">
-            <ion-icon class="icon" name="logo-twitter"></ion-icon>
-          </a>
-          <a class="media-list" href="https://www.facebook.com/" target="_blank">
-            <ion-icon class="icon" name="logo-facebook"></ion-icon>
-          </a>
-          <a class="media-list" href="https://www.instagram.com/" target="_blank">
-            <ion-icon class="icon" name="logo-instagram"></ion-icon>
-          </a>
-          <a class="media-list" href="https://www.linkedin.com/" target="_blank">
-            <ion-icon class="icon" name="logo-linkedin"></ion-icon>
-          </a>
+#travel-vs-vacation h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  letter-spacing: 5px;
+  line-height: 5px;
+  font-family: "Luckiest Guy", cursive;
+}
 
-        </div>
+#travel-vs-vacation h2 {
+  font-size: 23px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-family: "Calistoga", cursive;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
 
-        <div class="isaias">Site Created by Isaias Flores</div>
-      </footer>
-    </section>
-  </body>
-</main>
-<!--Icon links HTML-->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<!---->
+#travel-vs-vacation li {
+  position: relative;
+  margin-bottom: 0px;
+  padding: 0px;
+  font-size: 17px;
+  width: 90%;
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: 550;
+  background-color: rgba(239, 163, 96, 0.247);
+  border-radius: 10px;
+  z-index: 3;
+  transition: 1s ease-in-out;
+}
 
-</html>
-<!---->
-<!---->
-<!---->
+.vers-flex {
+  display: flex;
+  margin-top: 20px;
+}
+
+.line {
+  width: 0%;
+  height: 1200px;
+  margin-top: 75px;
+  margin-left: 20px;
+  border-radius: 40%;
+  border: 2px solid black;
+  background-color: black;
+}
+
+.big-ben {
+  position: absolute;
+  width: 19%;
+  bottom: 2%;
+  left: 7%;
+  rotate: 20deg;
+  box-shadow: 0px 0px 21px -10px black;
+  transition: 1s ease-in-out;
+}
+
+.big-ben:hover {
+  width: 30%;
+  rotate: 0deg;
+  bottom: 8%;
+  z-index: 4;
+}
+
+.odda {
+  position: absolute;
+  width: 25%;
+  bottom: 5%;
+  right: 4%;
+  rotate: -20deg;
+  box-shadow: 0px 0px 21px -10px black;
+  transition: 1s ease-in-out;
+  z-index: 1;
+}
+
+.odda:hover {
+  width: 40%;
+  rotate: 0deg;
+  bottom: 15%;
+  z-index: 4;
+}
+
+.company-logo {
+  position: absolute;
+  width: 30%;
+  left: 33%;
+  bottom: 0%;
+  margin: auto;
+  transition: 1s ease-in-out;
+}
+
+.wave1 {
+  position: absolute;
+  width: 16%;
+  bottom: 0%;
+  left: 0%;
+}
+
+.wave2 {
+  position: absolute;
+  width: 25%;
+  bottom: -5%;
+  right: 0%;
+  rotate: -90deg;
+}
+
+/* */
+
+/* */
+#location {
+  position: relative;
+  height: 900px;
+  background-color: #6ecde6;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
+
+#location h1 {
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-family: "Luckiest Guy", cursive;
+  margin: 50px auto 50px auto;
+}
+
+#location h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 20px;
+  font-family: "Calistoga", cursive;
+}
+
+#location h3 {
+  position: relative;
+  font-family: "Concert One", cursive;
+  padding: 10px;
+  color: rgb(189, 104, 0);
+  background-color: rgb(160, 233, 160);
+}
+
+.location-description {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  font-family: "Mukta Malar";
+  font-weight: 550;
+  z-index: 10;
+}
+
+#location .reality {
+  position: relative;
+  width: 30%;
+  font-size: 22px;
+  line-height: 30px;
+
+  margin: 10px 10px auto 150px;
+  padding: 10px;
+}
+
+#location .advice {
+  width: 60%;
+  font-size: 21px;
+  line-height: 30px;
+  margin: 10px auto auto 30px;
+  padding: 10px;
+}
+
+#location p {
+  background-color: rgb(160, 233, 160);
+  padding: 10px;
+}
+
+.gljufrabui {
+  position: absolute;
+  width: 20%;
+  bottom: 0%;
+  left: 2%;
+  rotate: -3deg;
+  z-index: 5;
+  transition: 1s ease-in-out;
+}
+
+.gljufrabui:hover {
+  width: 30%;
+  rotate: 0deg;
+  bottom: 7%;
+  left: 5%;
+  z-index: 11;
+}
+
+.camp-nou {
+  position: absolute;
+  width: 30%;
+  bottom: 0%;
+  left: 21%;
+  rotate: 2deg;
+  z-index: 1;
+  transition: 1s ease-in-out;
+}
+
+.camp-nou:hover {
+  width: 40%;
+  rotate: 0deg;
+  bottom: 7%;
+  left: 21%;
+  z-index: 11;
+}
+
+.lovcen {
+  position: absolute;
+  width: 20%;
+  bottom: 0%;
+  left: 50%;
+  rotate: -3deg;
+  transition: 1s ease-in-out;
+}
+
+.lovcen:hover {
+  width: 30%;
+  rotate: 0deg;
+  bottom: 7%;
+  left: 50%;
+  z-index: 11;
+}
+
+.usa-shape {
+  position: absolute;
+  width: 30%;
+  z-index: 4;
+  right: 30%;
+  bottom: 77%;
+  rotate: -10deg;
+  transition: 1s ease-in-out;
+}
+
+.europe-shape {
+  position: absolute;
+  width: 32%;
+  z-index: 4;
+  right: 20%;
+  bottom: 57%;
+  rotate: 10deg;
+  transition: 1s ease-in-out;
+}
+
+.south-america-shape {
+  position: absolute;
+  width: 30%;
+  z-index: 4;
+  right: 24%;
+  bottom: 34%;
+  rotate: 10deg;
+  transition: 1s ease-in-out;
+}
+
+.australia-shape {
+  position: absolute;
+  width: 30%;
+  z-index: 4;
+  right: 8%;
+  bottom: 3%;
+  rotate: -10deg;
+  transition: 1s ease-in-out;
+}
+
+.africa-shape {
+  position: absolute;
+  width: 30%;
+  z-index: 4;
+  right: -6%;
+  bottom: 3%;
+  rotate: 10deg;
+  transition: 1s ease-in-out;
+}
+/* */
+
+/* */
+#transportation {
+  position: relative;
+  background-color: #ffb0b0;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
+
+#transportation h1 {
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin-bottom: 0px;
+  font-family: "Luckiest Guy", cursive;
+}
+
+#transportation h2 {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 40px;
+  font-family: "Calistoga", cursive;
+}
+
+#transportation h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 25px;
+  font-family: "Concert One", cursive;
+}
+
+.transportation-description {
+  position: relative;
+  width: 45%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+
+#transportation .reality {
+  background-color: rgba(63, 199, 233, 0.614);
+  font-family: "Mukta Malar";
+  font-size: 18px;
+  font-weight: 550;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#transportation .advice {
+  background-color: rgba(63, 199, 233, 0.614);
+  font-family: "Mukta Malar";
+  font-size: 17px;
+  font-weight: 550;
+  padding: 10px 10px 10px;
+  margin-bottom: 10px;
+}
+
+.road-sign {
+  position: absolute;
+  width: 85%;
+  left: 42%;
+  top: 0%;
+  z-index: 0;
+  transition: 1s ease-in-out;
+}
+
+.plitvice-lakes-np {
+  position: absolute;
+  width: 25%;
+  right: 25%;
+  top: 5%;
+  rotate: 20deg;
+  transition: 1s ease-in-out;
+}
+
+.plitvice-lakes-np:hover {
+  width: 30%;
+  top: 10%;
+  rotate: 0deg;
+  z-index: 5;
+}
+
+.glacier-np {
+  position: absolute;
+  width: 25%;
+  top: 55%;
+  right: 28%;
+  rotate: -20deg;
+  transition: 1s ease-in-out;
+}
+.glacier-np:hover {
+  width: 30%;
+  top: 35%;
+  right: 15%;
+  rotate: 0deg;
+  z-index: 5;
+}
+
+/* */
+
+/* */
+#lodging {
+  position: relative;
+  background-color: #98c0f8;
+  overflow: hidden;
+  transition: 1s ease-in-out;
+}
+#lodging h1 {
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-family: "Luckiest Guy", cursive;
+  margin-bottom: 0px;
+}
+
+#lodging h2 {
+  margin-bottom: 0px;
+  margin-left: 20px;
+  font-size: 40px;
+  font-family: "Calistoga", cursive;
+}
+
+#lodging h3 {
+  font-size: 25px;
+  font-family: "Concert One", cursive;
+  padding-top: 10px;
+}
+
+#lodging .reality {
+  background-color: rgb(244, 242, 115);
+  font-family: "Mukta Malar";
+  font-size: 18px;
+  font-weight: 550;
+  margin-top: 0px;
+  padding: 10px 10px 10px;
+}
+
+#lodging .advice {
+  background-color: rgb(244, 242, 115);
+  font-family: "Mukta Malar";
+  font-size: 17px;
+  font-weight: 550;
+  padding: 10px 10px 10px;
+  margin-bottom: 10px;
+}
+
+.lodging-description {
+  position: relative;
+  width: 50%;
+  float: right;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  z-index: 1;
+}
+
+.hotel {
+  position: absolute;
+  width: 70%;
+  right: 45%;
+  top: 1%;
+  z-index: 0;
+  transition: 1s ease-in-out;
+}
+
+.mardi-gras {
+  position: absolute;
+  width: 21%;
+  left: 1%;
+  top: 20%;
+  rotate: -10deg;
+  transition: 1s ease-in-out;
+}
+
+.mardi-gras:hover {
+  width: 25%;
+  left: 3%;
+  rotate: 0deg;
+  z-index: 2;
+}
+
+.preikestolen {
+  position: absolute;
+  width: 21%;
+  left: 25%;
+  top: 60%;
+  rotate: 10deg;
+  transition: 1s ease-in-out;
+}
+
+.preikestolen:hover {
+  width: 25%;
+  bottom: 5%;
+  rotate: 0deg;
+  z-index: 4;
+}
+/* */
+
+/* */
+#solo-group {
+  position: relative;
+  background-color: #ffe8e8;
+  overflow: hidden;
+}
+
+#solo-group h1 {
+  font-size: 50px;
+  width: 150%;
+  letter-spacing: 5px;
+  font-family: "Luckiest Guy", cursive;
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+
+#solo-group h2 {
+  margin-bottom: 0px;
+  margin-left: 20px;
+  font-size: 40px;
+  font-family: "Calistoga", cursive;
+}
+
+.solo-group-description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 10px;
+  z-index: 10;
+}
+
+#solo-group .reality {
+  background-color: rgba(121, 244, 115, 0.744);
+  font-family: "Mukta Malar";
+  font-size: 18px;
+  font-weight: 550;
+  margin-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#solo-group .advice {
+  background-color: rgba(121, 244, 115, 0.744);
+  font-family: "Mukta Malar";
+  font-size: 17px;
+  font-weight: 550;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+}
+
+.el-yunque {
+  position: absolute;
+  width: 26%;
+  bottom: 58%;
+  right: 10%;
+  rotate: 20deg;
+  transition: 1s ease-in-out;
+  z-index: 3;
+}
+
+.el-yunque:hover {
+  width: 35%;
+  bottom: 45%;
+  right: 12%;
+  rotate: 0deg;
+  z-index: 10;
+}
+
+.amalfi {
+  position: absolute;
+  width: 25%;
+  bottom: 23%;
+  right: 27%;
+  rotate: -15deg;
+  z-index: 3;
+  transition: 1s ease-in-out;
+}
+
+.amalfi:hover {
+  width: 30%;
+  bottom: 20%;
+  rotate: 0deg;
+  z-index: 11;
+}
+
+.escalator {
+  position: absolute;
+  width: 70%;
+  left: 42%;
+  bottom: -165px;
+  transition: 1s ease-in-out;
+}
+/* */
+
+/* */
+#document {
+  position: relative;
+
+  background-color: #6fd8a6;
+  overflow: hidden;
+}
+
+#document h1 {
+  position: relative;
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin-bottom: 0px;
+  font-family: "Luckiest Guy", cursive;
+  width: 100%;
+  z-index: 100;
+}
+
+#document h2 {
+  position: relative;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 40px;
+  font-family: "Calistoga", cursive;
+  z-index: 1;
+}
+
+#document .reality {
+  position: relative;
+  background-color: rgb(246, 191, 191);
+  font-family: "Mukta Malar";
+  font-size: 18px;
+  font-weight: 550;
+  margin-top: 0px;
+  padding: 1px 10px 1px 10px;
+  z-index: 3;
+}
+
+#document .advice {
+  position: relative;
+  background-color: rgb(246, 191, 191);
+  font-family: "Mukta Malar";
+  font-size: 17px;
+  font-weight: 550;
+  padding: 1px 10px 1px 10px;
+  margin-bottom: 10px;
+  z-index: 3;
+}
+
+.document-description {
+  width: 50%;
+  float: right;
+  margin-right: 10px;
+  z-index: 3;
+}
+
+.leaning-tower {
+  position: absolute;
+  width: 65%;
+  top: 1%;
+  right: 45%;
+  transition: 1s ease-in-out;
+  z-index: 0;
+}
+
+.plane-crash {
+  position: absolute;
+  width: 25%;
+  bottom: 10%;
+  rotate: 30deg;
+  transition: 1s ease-in-out;
+}
+
+.plane-crash:hover {
+  width: 35%;
+  bottom: 10%;
+  rotate: 0deg;
+  z-index: 4;
+}
+
+.zion {
+  position: absolute;
+  width: 20%;
+  left: 10%;
+  top: 0%;
+  rotate: -10deg;
+  transition: 1s ease-in-out;
+}
+
+.zion:hover {
+  width: 30%;
+  top: 15%;
+  left: 10%;
+  rotate: 0deg;
+  z-index: 3;
+}
+
+/* Footer*/
+
+footer {
+  position: relative;
+  border: 2px solid rgba(0, 0, 0, 0.175);
+  display: flex;
+  background-color: rgba(186, 88, 88, 0.906);
+  overflow: hidden;
+}
+
+footer .logo {
+  display: block;
+  margin-right: auto;
+  width: 50%;
+  margin-left: 60%;
+  transition: 1s ease-in-out;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer .nav-list {
+  font-family: "Vina Sans";
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+  line-height: 100px;
+}
+
+footer .media-icons {
+  width: 7%;
+  margin-left: auto;
+}
+
+footer .icon {
+  width: 100%;
+  height: 50px;
+  margin-top: 40px;
+  color: black;
+  background-color: bisque;
+  transition: 1s ease-in-out;
+}
+
+.icon:visited {
+  color: rgb(60, 138, 255);
+}
+
+.isaias {
+  position: absolute;
+
+  left: 0%;
+  bottom: 0%;
+}
+
+/* */
+
+/* Media Queries*/
+
+@media screen and (max-width: 1300px) {
+  #about-me p {
+    line-height: 25px;
+  }
+
+  .about-trip {
+    margin-left: 30px;
+  }
+
+  #trip p {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #nav-section {
+    right: 5%;
+  }
+
+  .option {
+    width: 110%;
+  }
+
+  .option:hover {
+    width: 115%;
+    font-size: 28px;
+  }
+
+  .pin {
+    height: 40px;
+    top: 6%;
+  }
+
+  .neahkahnie-mountain {
+    bottom: 45%;
+    rotate: -20deg;
+  }
+
+  .climber {
+    bottom: 2%;
+  }
+
+  .drinking {
+    right: 20%;
+    bottom: 55%;
+  }
+
+  #travel-vs-vacation {
+    height: 1700px;
+  }
+
+  #location h2 {
+    font-size: 35px;
+  }
+
+  .usa-shape {
+    bottom: 82%;
+    right: 22%;
+  }
+
+  .europe-shape {
+    right: 21%;
+    bottom: 65%;
+  }
+
+  .south-america-shape {
+    right: 22%;
+    bottom: 50%;
+  }
+
+  .australia-shape {
+    right: 22%;
+    bottom: 38%;
+  }
+
+  .africa-shape {
+    right: 22%;
+    bottom: 25%;
+    rotate: -20deg;
+  }
+
+  #transportation .reality {
+    background-color: rgba(63, 199, 233, 0.877);
+  }
+
+  #transportation .advice {
+    background-color: rgba(63, 199, 233, 0.877);
+  }
+
+  .road-sign {
+    width: 100%;
+    top: 15%;
+    left: 11%;
+    opacity: 0.7;
+  }
+
+  .plitvice-lakes-np {
+    right: 0%;
+    top: 8%;
+    rotate: -20deg;
+  }
+
+  .plitvice-lakes-np:hover {
+    width: 40%;
+    right: 5%;
+    rotate: 0deg;
+  }
+
+  .glacier-np {
+    top: 70%;
+    right: 5%;
+  }
+  .glacier-np:hover {
+    width: 40%;
+    top: 40%;
+    right: 20%;
+  }
+
+  #lodging h2 {
+    margin-bottom: 0px;
+    margin-left: 20px;
+  }
+
+  .lodging-description {
+    width: 60%;
+  }
+
+  #lodging .reality {
+    background-color: rgba(244, 242, 115, 0.854);
+  }
+
+  #lodging .advice {
+    background-color: rgba(244, 242, 115, 0.854);
+  }
+
+  .hotel {
+    width: 100%;
+    right: 29%;
+    top: 7%;
+    opacity: 0.7;
+  }
+
+  .mardi-gras {
+    width: 25%;
+    top: 30%;
+  }
+
+  .mardi-gras:hover {
+    width: 30%;
+  }
+
+  .preikestolen {
+    width: 25%;
+    left: 10%;
+    top: 67%;
+  }
+  .preikestolen:hover {
+    width: 30%;
+    top: 60%;
+  }
+
+  #solo-group h1 {
+    width: 200%;
+  }
+
+  .el-yunque {
+    width: 30%;
+    bottom: 55%;
+    right: 20%;
+    rotate: -20deg;
+  }
+
+  .el-yunque:hover {
+    width: 40%;
+  }
+
+  .amalfi {
+    width: 30%;
+    bottom: 10%;
+    right: 5%;
+    rotate: 15deg;
+  }
+
+  .amalfi:hover {
+    width: 40%;
+  }
+
+  .escalator {
+    width: 110%;
+    left: 10%;
+    bottom: -210px;
+  }
+
+  .leaning-tower {
+    width: 90%;
+    bottom: -120px;
+    top: 0px;
+    right: 25%;
+  }
+
+  .plane-crash {
+    width: 30%;
+    left: 0%;
+  }
+
+  .plane-crash:hover {
+    width: 45%;
+    left: 20%;
+  }
+
+  .zion {
+    width: 25%;
+    top: 10%;
+  }
+
+  .zion:hover {
+    width: 35%;
+    left: 20%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .introduction {
+    top: 10%;
+    left: 25%;
+    z-index: 1;
+  }
+
+  #about-me p {
+    width: 80%;
+    line-height: 22px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #nav-section {
+    right: 10%;
+  }
+
+  .dropdown {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  #about-me h1 {
+    font-size: 30px;
+  }
+
+  #about-me p {
+    width: 80%;
+    line-height: 20px;
+  }
+
+  .pin {
+    width: 4%;
+    left: 5%;
+  }
+
+  #trip h1 {
+    font-size: 40px;
+    width: 370px;
+  }
+
+  #trip p {
+    font-size: 20px;
+    line-height: 25px;
+    width: 45%;
+  }
+
+  .neahkahnie-mountain {
+    width: 23%;
+    right: 6%;
+  }
+
+  .flaminngo-beach {
+    width: 25%;
+    right: 25%;
+    bottom: 5%;
+  }
+
+  .climber {
+    bottom: 13%;
+  }
+
+  .drinking {
+    width: 40%;
+
+    bottom: 55%;
+  }
+
+  #travel-vs-vacation {
+    height: 1770px;
+  }
+
+  #travel-vs-vacation li {
+    width: 95%;
+  }
+
+  #location .reality {
+    width: 40%;
+  }
+
+  #location .advice {
+    line-height: 27px;
+  }
+
+  .usa-shape {
+    bottom: 83%;
+    right: 24%;
+  }
+
+  .europe-shape {
+    right: 23%;
+  }
+
+  .south-america-shape {
+    right: 23%;
+  }
+
+  .australia-shape {
+    right: 24%;
+  }
+
+  .africa-shape {
+    right: 24%;
+  }
+
+  .transportation-description {
+    width: 60%;
+  }
+
+  #transportation .reality {
+    background-color: rgba(63, 199, 233, 0.87);
+  }
+
+  #transportation .advice {
+    background-color: rgba(63, 199, 233, 0.892);
+  }
+
+  .road-sign {
+    width: 130%;
+    left: -20%;
+  }
+
+  .plitvice-lakes-np {
+    width: 30%;
+  }
+
+  .plitvice-lakes-np:hover {
+    width: 50%;
+    top: 10%;
+    rotate: 0deg;
+  }
+
+  .glacier-np {
+    width: 30%;
+    top: 60%;
+    right: 0%;
+  }
+  .glacier-np:hover {
+    width: 50%;
+  }
+
+  .hotel {
+    width: 150%;
+    right: 0%;
+    top: 1%;
+  }
+
+  .mardi-gras {
+    width: 30%;
+    left: 1%;
+    top: 20%;
+  }
+
+  .mardi-gras:hover {
+    width: 40%;
+    left: 3%;
+  }
+
+  .preikestolen {
+    width: 30%;
+    left: 5%;
+    top: 70%;
+  }
+
+  .preikestolen:hover {
+    width: 40%;
+    bottom: 5%;
+  }
+
+  .el-yunque {
+    right: 10%;
+    bottom: 40%;
+  }
+
+  .amalfi {
+    bottom: 55%;
+  }
+
+  .amalfi:hover {
+    z-index: 20;
+  }
+
+  .escalator {
+    width: 110%;
+    left: 10%;
+    bottom: -170px;
+    z-index: 0;
+  }
+
+  .leaning-tower {
+    width: 110%;
+    top: 10%;
+    right: 15%;
+  }
+
+  .plane-crash {
+    width: 40%;
+    bottom: 10%;
+  }
+
+  .plane-crash:hover {
+    width: 55%;
+  }
+
+  .zion {
+    width: 35%;
+    left: 10%;
+  }
+
+  .zion:hover {
+    width: 45%;
+  }
+
+  footer .logo {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .usa-shape {
+    right: 28%;
+  }
+
+  .europe-shape {
+    right: 25%;
+    bottom: 65%;
+  }
+
+  .south-america-shape {
+    right: 26%;
+    bottom: 50%;
+  }
+
+  .australia-shape {
+    right: 27%;
+    bottom: 38%;
+  }
+
+  .africa-shape {
+    right: 27%;
+    bottom: 25%;
+    rotate: -20deg;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #nav-section {
+    right: 15%;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+  }
+
+  nav .icon {
+    width: 35px;
+  }
+
+  .dropdown {
+    margin-left: 50px;
+    width: 90%;
+  }
+
+  .option {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .option:hover {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .introduction {
+    top: 5%;
+    left: 0%;
+    right: 0%;
+    z-index: 1;
+  }
+
+  #opening h1 {
+    font-size: 60px;
+  }
+
+  .iceland {
+    margin: 50px 20px 20px 20px;
+  }
+
+  #about-me p {
+    width: 90%;
+    margin: 5% 0% 5% 2%;
+    line-height: 18px;
+  }
+
+  .pin {
+    width: 3%;
+    height: 30px;
+    top: 6%;
+    left: 2%;
+  }
+
+  .neahkahnie-mountain {
+    width: 27%;
+    bottom: 50%;
+  }
+
+  .flaminngo-beach {
+    width: 27%;
+    right: 20%;
+    bottom: 10%;
+  }
+
+  .climber {
+    bottom: 22%;
+  }
+
+  .drinking {
+    right: 20%;
+  }
+
+  #travel-vs-vacation {
+    height: 1700px;
+  }
+
+  .company-logo {
+    width: 40%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+  }
+
+  #travel-vs-vacation h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  #travel-vs-vacation li {
+    line-height: 20px;
+  }
+
+  .big-ben {
+    width: 25%;
+  }
+
+  .odda {
+    width: 30%;
+    bottom: 6%;
+    right: 1%;
+  }
+
+  #location {
+    height: 1000px;
+  }
+
+  .location-description {
+    flex-direction: column;
+  }
+
+  #location .reality {
+    width: 90%;
+    font-size: 20px;
+    margin: -20px auto auto auto;
+  }
+
+  #location .advice {
+    width: 95%;
+    font-size: 20px;
+    line-height: 30px;
+    margin: -40px auto auto auto;
+  }
+
+  #location h1 {
+    font-size: 40px;
+    margin: 40px 500px auto auto;
+  }
+
+  #location h2 {
+    font-size: 35px;
+    margin-left: 600px;
+    margin-bottom: 0px;
+  }
+
+  .gljufrabui {
+    width: 25%;
+  }
+
+  .gljufrabui:hover {
+    width: 40%;
+  }
+
+  .camp-nou {
+    width: 35%;
+  }
+
+  .camp-nou:hover {
+    width: 50%;
+  }
+
+  .lovcen {
+    width: 25%;
+    z-index: 1;
+  }
+
+  .lovcen:hover {
+    width: 40%;
+  }
+
+  .usa-shape {
+    width: 60%;
+    bottom: 80%;
+    right: 10%;
+    rotate: -20deg;
+  }
+
+  .europe-shape {
+    width: 60%;
+    right: 63%;
+    bottom: 50%;
+  }
+
+  .south-america-shape {
+    width: 60%;
+    right: 55%;
+    bottom: 12%;
+  }
+
+  .australia-shape {
+    width: 60%;
+    right: -5%;
+    bottom: 6%;
+    z-index: 0;
+  }
+
+  .africa-shape {
+    width: 60%;
+    right: 20%;
+    bottom: 55%;
+  }
+
+  #transportation h1 {
+    font-size: 40px;
+  }
+
+  #transportation h2 {
+    font-size: 35px;
+  }
+
+  #lodging h1 {
+    font-size: 40px;
+  }
+
+  #lodging h2 {
+    font-size: 35px;
+  }
+
+  .hotel {
+    width: 130%;
+    top: 7%;
+  }
+
+  .solo-group-description {
+    width: 60%;
+  }
+
+  #solo-group h1 {
+    font-size: 40px;
+    width: 160%;
+  }
+
+  #solo-group h2 {
+    font-size: 35px;
+  }
+
+  .el-yunque {
+    width: 30%;
+    bottom: 45%;
+    rotate: -20deg;
+  }
+
+  .el-yunque:hover {
+    width: 40%;
+    bottom: 45%;
+    right: 12%;
+    z-index: 10;
+  }
+
+  .amalfi {
+    width: 30%;
+    bottom: 60%;
+    right: 5%;
+    rotate: 15deg;
+  }
+
+  .amalfi:hover {
+    width: 40%;
+    bottom: 40%;
+  }
+
+  .document-description {
+    width: 60%;
+  }
+
+  #document h1 {
+    font-size: 40px;
+  }
+
+  #document h2 {
+    font-size: 35px;
+  }
+
+  .leaning-tower {
+    width: 140%;
+    bottom: 160px;
+    top: 0px;
+    right: 10%;
+  }
+
+  .zion {
+    left: 0%;
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dropdown {
+    margin-left: 50px;
+  }
+
+  .introduction {
+    top: 0%;
+  }
+
+  #opening h1 {
+    font-size: 50px;
+    margin-bottom: 0px;
+  }
+
+  #opening h2 {
+    width: 60%;
+    font-size: 20px;
+  }
+
+  #about-me p {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .pin {
+    top: 8%;
+    left: 3%;
+  }
+
+  #trip p {
+    font-size: 20px;
+    line-height: 22px;
+    width: 45%;
+  }
+
+  .neahkahnie-mountain {
+    width: 30%;
+    right: 6%;
+    rotate: -20deg;
+  }
+
+  .neahkahnie-mountain:hover {
+    width: 40%;
+    bottom: 30%;
+  }
+
+  .flaminngo-beach {
+    width: 30%;
+    right: 15%;
+    bottom: 10%;
+  }
+
+  .flaminngo-beach:hover {
+    width: 40%;
+    bottom: 10%;
+  }
+
+  .climber {
+    bottom: 24%;
+    right: 5%;
+  }
+
+  .drinking {
+    width: 40%;
+    bottom: 55%;
+  }
+
+  #travel-vs-vacation {
+    height: 2100px;
+  }
+
+  .vers-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #travel-vs-vacation li {
+    position: relative;
+    font-size: 17px;
+    width: 100%;
+    background-color: rgba(239, 163, 96, 0.247);
+    line-height: 18px;
+  }
+
+  .travel {
+    width: 90%;
+    font-weight: 500;
+  }
+
+  .vacation {
+    margin-top: 500px;
+    width: 90%;
+    font-weight: 500;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .big-ben {
+    width: 30%;
+    bottom: 47%;
+    left: 4%;
+  }
+
+  .big-ben:hover {
+    width: 30%;
+    rotate: 0deg;
+    bottom: 45%;
+    left: 9%;
+    z-index: 5;
+  }
+
+  .odda {
+    width: 40%;
+    bottom: 50%;
+    right: -2%;
+  }
+
+  .odda:hover {
+    width: 50%;
+    rotate: 0deg;
+    bottom: 41%;
+    right: 5%;
+    z-index: 5;
+  }
+
+  .company-logo {
+    width: 30%;
+    left: 0%;
+    right: 0%;
+    bottom: 42%;
+  }
+
+  .location-description {
+    font-family: "Mukta Malar";
+    font-weight: 550;
+  }
+
+  #location h2 {
+    margin-left: 510px;
+  }
+
+  #location .reality {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  #location .advice {
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .gljufrabui {
+    width: 28%;
+    left: 0%;
+  }
+
+  .camp-nou {
+    width: 40%;
+  }
+
+  .lovcen {
+    width: 28%;
+    z-index: 1;
+    left: 55%;
+  }
+
+  .transportation-description {
+    position: relative;
+    width: 60%;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+
+  #transportation .advice {
+    margin-top: 10px;
+  }
+
+  #lodging h1 {
+    margin-bottom: 10px;
+  }
+
+  #lodging h2 {
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+
+  .lodging-description {
+    line-height: 20px;
+  }
+
+  #solo-group .reality {
+    line-height: 20px;
+  }
+
+  #solo-group .advice {
+    line-height: 20px;
+  }
+
+  .el-yunque {
+    width: 35%;
+    bottom: 25%;
+    right: 0%;
+    rotate: 20deg;
+  }
+
+  .el-yunque:hover {
+    width: 50%;
+    bottom: 45%;
+  }
+
+  .amalfi {
+    width: 35%;
+    bottom: 50%;
+  }
+
+  .amalfi:hover {
+    width: 50%;
+    bottom: 20%;
+    z-index: 10;
+  }
+
+  .escalator {
+    width: 110%;
+    left: 10%;
+    bottom: -100px;
+  }
+
+  #document .reality {
+    line-height: 20px;
+  }
+
+  #document .advice {
+    line-height: 20px;
+  }
+
+  .leaning-tower {
+    width: 160%;
+    bottom: 100px;
+    top: -100px;
+    right: 10%;
+    z-index: 0;
+  }
+
+  footer .logo {
+    width: 40%;
+    margin-left: 24%;
+  }
+
+  footer .nav-list {
+    font-size: 30px;
+    line-height: 80px;
+  }
+
+  footer .icon {
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #nav-section {
+    right: 20%;
+  }
+
+  .dropdown {
+    margin-left: 60px;
+  }
+
+  .option {
+    font-size: 15px;
+    width: 100%;
+    height: 20px;
+  }
+
+  .option:hover {
+    font-size: 17px;
+    width: 110%;
+    height: 30px;
+  }
+
+  nav .icon {
+    border-radius: 5px;
+  }
+
+  #opening h1 {
+    font-size: 40px;
+    margin-bottom: -10px;
+  }
+
+  #opening h2 {
+    font-size: 15px;
+  }
+
+  #trip p {
+    font-size: 18px;
+    line-height: 18px;
+    width: 45%;
+  }
+
+  #about-me p {
+    width: 90%;
+    margin: 5% 0% 5% 2%;
+    font-size: 12px;
+  }
+
+  .pin {
+    top: 8%;
+    left: 3%;
+  }
+
+  .flaminngo-beach {
+    bottom: 8%;
+  }
+
+  .climber {
+    bottom: 25%;
+  }
+
+  .drinking {
+    width: 40%;
+    bottom: 55%;
+  }
+
+  #travel-vs-vacation {
+    height: 2200px;
+  }
+
+  .wave2 {
+    position: absolute;
+    width: 30%;
+    bottom: -4%;
+    right: 0%;
+    rotate: -90deg;
+  }
+  .big-ben {
+    width: 30%;
+    bottom: 50%;
+    left: 4%;
+  }
+
+  .odda {
+    bottom: 52%;
+  }
+
+  .company-logo {
+    bottom: 44%;
+  }
+
+  #location h2 {
+    margin-left: 440px;
+  }
+
+  .usa-shape {
+    width: 60%;
+    bottom: 80%;
+    right: 10%;
+    rotate: -20deg;
+  }
+
+  .europe-shape {
+    width: 60%;
+    right: 63%;
+    bottom: 55%;
+  }
+
+  .south-america-shape {
+    width: 60%;
+    right: 55%;
+    bottom: 12%;
+  }
+
+  .australia-shape {
+    width: 60%;
+    right: -15%;
+    bottom: 6%;
+    z-index: 0;
+  }
+
+  .africa-shape {
+    width: 60%;
+    right: 20%;
+    bottom: 55%;
+  }
+
+  .road-sign {
+    width: 150%;
+  }
+
+  .plitvice-lakes-np {
+    width: 35%;
+    right: 0%;
+    top: 8%;
+    rotate: -20deg;
+    z-index: 2;
+  }
+
+  .plitvice-lakes-np:hover {
+    width: 50%;
+    top: 10%;
+    right: 5%;
+    rotate: 0deg;
+    z-index: 5;
+  }
+
+  .glacier-np {
+    width: 35%;
+    top: 70%;
+    right: 0%;
+  }
+  .glacier-np:hover {
+    width: 50%;
+    top: 60%;
+    right: 10%;
+    z-index: 5;
+  }
+
+  #lodging h2 {
+    font-size: 35px;
+  }
+
+  .hotel {
+    width: 170%;
+    right: -10%;
+    top: 0%;
+    z-index: 0;
+  }
+
+  #solo-group h1 {
+    width: 100%;
+  }
+
+  .el-yunque {
+    bottom: 40%;
+    right: 0%;
+    rotate: -20deg;
+  }
+
+  .amalfi {
+    bottom: 60%;
+    right: 0%;
+  }
+
+  .escalator {
+    width: 120%;
+    bottom: -110px;
+  }
+
+  .plane-crash {
+    width: 45%;
+    bottom: 10%;
+  }
+
+  .plane-crash:hover {
+    width: 55%;
+  }
+
+  .zion {
+    width: 35%;
+    left: 0%;
+    top: 20%;
+  }
+
+  .zion:hover {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #nav-section {
+    right: 23%;
+  }
+
+  .dropdown {
+    margin-left: 70px;
+  }
+
+  .option {
+    font-size: 13px;
+    width: 110%;
+  }
+
+  .option:hover {
+    font-size: 15px;
+    width: 120%;
+  }
+
+  .austria {
+    width: 100%;
+    height: 450px;
+  }
+
+  .introduction {
+    top: 5%;
+  }
+
+  #opening h1 {
+    font-size: 45px;
+  }
+
+  #opening h2 {
+    width: 60%;
+    line-height: 20px;
+  }
+
+  #about-me {
+    flex-direction: column;
+  }
+
+  .iceland {
+    margin: 20px auto 0px auto;
+    width: 80%;
+    border-radius: 10px;
+    z-index: 2;
+    box-shadow: 2px 10px 20px 2px;
+    transition: 1s ease-in-out;
+  }
+
+  #about-me h1 {
+    font-size: 45px;
+    margin-left: 10%;
+    letter-spacing: 20px;
+    padding: 5px;
+  }
+
+  #about-me p {
+    width: 90%;
+    margin: 5% auto;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .animated-map {
+    position: absolute;
+    width: 80%;
+    right: 0%;
+  }
+
+  .pin {
+    width: 5%;
+    height: 50px;
+    top: 1%;
+    left: 8%;
+  }
+
+  #trip {
+    flex-direction: column-reverse;
+  }
+
+  .about-trip {
+    margin-left: 0px;
+    z-index: 2;
+  }
+
+  .trip-pics {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  #trip h1 {
+    font-size: 35px;
+    width: 320px;
+    margin-left: 30px;
+  }
+
+  #trip p {
+    font-size: 20px;
+    width: 90%;
+    text-align: center;
+    margin: auto auto 10px auto;
+    background-color: rgba(255, 187, 1, 0.689);
+  }
+
+  .neahkahnie-mountain {
+    position: relative;
+    width: 45%;
+    rotate: 0deg;
+    right: 0%;
+    box-shadow: 0px 0px 10px -5px black;
+  }
+
+  .neahkahnie-mountain:hover {
+    pointer-events: none;
+  }
+
+  .flaminngo-beach {
+    position: relative;
+    width: 47%;
+    rotate: 0deg;
+    right: 0%;
+    margin-left: 10px;
+    box-shadow: 0px 0px 10px -5px black;
+  }
+
+  .flaminngo-beach:hover {
+    pointer-events: none;
+  }
+
+  .climber {
+    width: 12%;
+    bottom: 28%;
+    right: 0%;
+    z-index: 0;
+  }
+
+  .drinking {
+    width: 100%;
+    right: 20%;
+    bottom: 25%;
+    z-index: 0;
+  }
+
+  #travel-vs-vacation {
+    height: 2300px;
+  }
+
+  #travel-vs-vacation h1 {
+    font-size: 35px;
+  }
+
+  .big-ben {
+    width: 35%;
+    left: 6%;
+  }
+
+  .big-ben:hover {
+    pointer-events: none;
+  }
+
+  .odda {
+    width: 45%;
+    right: -5%;
+    z-index: 1;
+  }
+
+  .odda:hover {
+    pointer-events: none;
+  }
+
+  .company-logo {
+    width: 32%;
+    left: 0%;
+    right: 0%;
+    bottom: 44%;
+  }
+
+  #location h2 {
+    font-size: 30px;
+    margin-left: 350px;
+  }
+
+  #location h3 {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  #location .reality {
+    width: 94%;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  #location .advice {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .gljufrabui {
+    width: 35%;
+    bottom: 0%;
+    left: -5%;
+  }
+
+  .gljufrabui:hover {
+    pointer-events: none;
+  }
+
+  .camp-nou {
+    width: 40%;
+    bottom: 0%;
+    left: 28%;
+  }
+
+  .camp-nou:hover {
+    pointer-events: none;
+  }
+
+  .lovcen {
+    width: 35%;
+    bottom: 0%;
+    left: 66%;
+  }
+
+  .lovcen:hover {
+    pointer-events: none;
+  }
+
+  .usa-shape {
+    bottom: 90%;
+  }
+
+  #transportation {
+    position: relative;
+    background-color: #ffb0b0;
+    overflow: hidden;
+    height: 1200px;
+  }
+
+  .transportation-description {
+    position: relative;
+    width: 95%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    margin: auto;
+  }
+
+  #transportation h2 {
+    font-size: 30px;
+  }
+
+  .road-sign {
+    width: 170%;
+
+    left: -40%;
+    opacity: 0.6;
+  }
+
+  .plitvice-lakes-np {
+    width: 45%;
+    top: 74%;
+    right: 1%;
+    rotate: 10deg;
+  }
+
+  .plitvice-lakes-np:hover {
+    pointer-events: none;
+  }
+
+  .glacier-np {
+    width: 45%;
+    top: 74%;
+    right: 54%;
+
+    rotate: -10deg;
+  }
+
+  .glacier-np:hover {
+    pointer-events: none;
+  }
+
+  #lodging {
+    height: 1500px;
+  }
+
+  .lodging-description {
+    position: relative;
+    float: none;
+    width: 90%;
+    margin: auto;
+  }
+
+  .hotel {
+    width: 180%;
+    right: -30%;
+    opacity: 0.8;
+  }
+
+  .mardi-gras {
+    width: 42%;
+    left: 55%;
+    top: 74%;
+    rotate: -10deg;
+  }
+
+  .mardi-gras:hover {
+    pointer-events: none;
+  }
+
+  .preikestolen {
+    width: 45%;
+    left: 5%;
+    top: 76%;
+    rotate: 10deg;
+  }
+
+  .preikestolen:hover {
+    pointer-events: none;
+  }
+
+  #solo-group {
+    position: relative;
+    background-color: #ffe8e8;
+    overflow: hidden;
+  }
+
+  #solo-group h1 {
+    font-size: 40px;
+    width: 110%;
+  }
+
+  .solo-group-description {
+    width: 90%;
+  }
+
+  #solo-group .reality {
+    width: 60%;
+  }
+
+  #solo-group .advice {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .el-yunque {
+    width: 45%;
+    bottom: 50%;
+    right: 0%;
+    rotate: -20deg;
+  }
+
+  .el-yunque:hover {
+    width: 55%;
+    bottom: 45%;
+    right: 12%;
+    z-index: 11;
+  }
+
+  .amalfi {
+    width: 45%;
+    bottom: 65%;
+    right: 0%;
+    rotate: 15deg;
+    z-index: 3;
+  }
+
+  .amalfi:hover {
+    width: 60%;
+    bottom: 40%;
+    z-index: 11;
+  }
+
+  .escalator {
+    width: 120%;
+    left: 0%;
+    bottom: -110px;
+    opacity: 0.8;
+  }
+
+  .document-description {
+    width: 90%;
+    float: none;
+    margin: auto auto auto 10px;
+    z-index: 1;
+  }
+
+  #document .reality {
+    width: 50%;
+    padding-bottom: 1px;
+  }
+
+  .leaning-tower {
+    width: 135%;
+    top: 5%;
+    right: -20%;
+  }
+
+  .plane-crash {
+    width: 50%;
+    bottom: 40%;
+    left: 50%;
+  }
+
+  .plane-crash:hover {
+    width: 60%;
+    bottom: 30%;
+    z-index: 20;
+  }
+
+  .zion {
+    width: 40%;
+    left: 60%;
+    top: 5%;
+  }
+
+  .zion:hover {
+    width: 50%;
+    top: 20%;
+    rotate: 0deg;
+  }
+
+  footer .logo {
+    width: 30%;
+    margin-left: 24%;
+  }
+
+  footer .nav-list {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  footer .media-icons {
+    width: 10%;
+  }
+
+  footer .icon {
+    width: 100%;
+    margin-top: 1px;
+  }
+
+  .isaias {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #travel-vs-vacation {
+    height: 2450px;
+  }
+
+  .wave1 {
+    position: absolute;
+    width: 19%;
+    bottom: 0%;
+    left: 0%;
+  }
+
+  .wave2 {
+    position: absolute;
+    width: 30%;
+    bottom: -2%;
+    right: 0%;
+    rotate: -90deg;
+  }
+
+  .big-ben {
+    width: 35%;
+    bottom: 50%;
+    left: 6%;
+  }
+
+  .odda {
+    width: 45%;
+    bottom: 52%;
+    right: -5%;
+    z-index: 1;
+  }
+
+  .company-logo {
+    width: 32%;
+    left: 0%;
+    right: 0%;
+    bottom: 44%;
+    z-index: 0;
+  }
+
+  #lodging {
+    position: relative;
+    background-color: #98c0f8;
+    overflow: hidden;
+    height: 1550px;
+  }
+
+  .hotel {
+    width: 250%;
+    right: -80%;
+    top: -10%;
+  }
+
+  .amalfi {
+    bottom: 63%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #nav-section {
+    right: 33%;
+  }
+
+  nav .icon {
+    width: 25px;
+    margin-top: 20px;
+    margin-left: 170px;
+  }
+
+  .dropdown {
+    margin-top: 40px;
+    margin-left: 100px;
+  }
+
+  .option {
+    font-size: 9px;
+    width: 90%;
+    height: 10px;
+  }
+
+  .option:hover {
+    font-size: 12px;
+  }
+
+  #opening {
+    overflow: hidden;
+  }
+
+  .austria {
+    width: 150%;
+    height: 400px;
+  }
+
+  #opening h1 {
+    font-size: 9vw;
+    margin-top: 80px;
+    margin-bottom: -15px;
+  }
+
+  #opening h2 {
+    width: 60%;
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .pin {
+    width: 4%;
+    height: 40px;
+
+    left: 10%;
+  }
+
+  .climber {
+    bottom: 38%;
+  }
+
+  .drinking {
+    width: 100%;
+    right: 20%;
+    bottom: 35%;
+  }
+
+  #travel-vs-vacation {
+    height: 2600px;
+  }
+
+  #travel-vs-vacation h2 {
+    font-size: 20px;
+  }
+
+  .travel {
+    width: 85%;
+    font-weight: 500;
+  }
+
+  .vacation {
+    width: 85%;
+    font-weight: 500;
+  }
+
+  .big-ben {
+    width: 40%;
+    bottom: 50%;
+  }
+
+  .odda {
+    width: 50%;
+    bottom: 53%;
+    right: 0%;
+  }
+
+  .company-logo {
+    width: 35%;
+    bottom: 45%;
+  }
+
+  .wave1 {
+    width: 25%;
+    bottom: 0%;
+    left: 0%;
+  }
+
+  .wave2 {
+    width: 45%;
+    bottom: -2%;
+  }
+
+  #location {
+    height: 1100px;
+  }
+
+  #location h2 {
+    margin-left: 250px;
+  }
+
+  .usa-shape {
+    width: 60%;
+    right: 0%;
+  }
+
+  .europe-shape {
+    width: 70%;
+    right: 55%;
+    bottom: 55%;
+  }
+
+  .south-america-shape {
+    width: 70%;
+    right: 55%;
+    bottom: 9%;
+  }
+
+  .australia-shape {
+    width: 70%;
+    right: -15%;
+    bottom: 6%;
+    z-index: 0;
+  }
+
+  .africa-shape {
+    width: 70%;
+    right: 30%;
+    bottom: 55%;
+  }
+
+  #transportation {
+    height: 1300px;
+  }
+
+  .road-sign {
+    width: 230%;
+    left: -60%;
+  }
+
+  .plitvice-lakes-np {
+    top: 79%;
+    z-index: 11;
+  }
+
+  .glacier-np {
+    top: 79%;
+    z-index: 11;
+  }
+
+  #lodging {
+    height: 1600px;
+  }
+
+  .hotel {
+    width: 300%;
+    right: -80%;
+    top: -10%;
+  }
+
+  .mardi-gras {
+    top: 80%;
+  }
+
+  .preikestolen {
+    top: 81%;
+  }
+
+  .el-yunque {
+    bottom: 53%;
+  }
+
+  .el-yunque:hover {
+    display: none;
+  }
+
+  #document .reality {
+    width: 60%;
+    z-index: 100;
+  }
+
+  .amalfi {
+    bottom: 66%;
+  }
+
+  .escalator {
+    width: 150%;
+    left: -20%;
+    bottom: -100px;
+  }
+
+  .leaning-tower {
+    width: 250%;
+    top: 5%;
+    right: -80%;
+  }
+
+  .plane-crash {
+    bottom: 45%;
+    left: 55%;
+  }
+
+  .plane-crash:hover {
+    pointer-events: none;
+  }
+
+  .zion {
+    top: 10%;
+  }
+
+  .zion:hover {
+    pointer-events: none;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer .logo {
+    width: 40%;
+    margin: auto;
+  }
+
+  footer .nav-list {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  footer .media-icons {
+    width: 70%;
+
+    margin: auto auto 10px auto;
+    border: 2px solid black;
+  }
+
+  footer .icon {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .isaias {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  nav .icon {
+    width: 23px;
+    margin-top: 10px;
+    margin-left: 150px;
+  }
+
+  .dropdown {
+    margin-top: 28px;
+    margin-left: 90px;
+  }
+
+  .option {
+    width: 110%;
+  }
+
+  .option:hover {
+    width: 120%;
+    height: 2vh;
+  }
+
+  #about-me h1 {
+    font-size: 30px;
+    margin-left: 10%;
+    letter-spacing: 20px;
+    padding: 5px;
+  }
+
+  #about-me p {
+    width: 90%;
+    margin: 5% auto;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .climber {
+    width: 12%;
+    bottom: 45%;
+  }
+
+  .drinking {
+    width: 100%;
+    right: 20%;
+    bottom: 45%;
+  }
+
+  #travel-vs-vacation {
+    height: 2800px;
+  }
+
+  .big-ben {
+    width: 40%;
+    bottom: 52%;
+    left: 6%;
+  }
+
+  .odda {
+    width: 50%;
+    bottom: 54%;
+    right: 0%;
+  }
+
+  .company-logo {
+    width: 40%;
+    left: 0%;
+    right: 0%;
+    bottom: 46%;
+  }
+
+  #location {
+    height: 1100px;
+  }
+
+  #location .reality {
+    font-size: 18px;
+  }
+
+  #location .advice {
+    font-size: 18px;
+  }
+
+  .road-sign {
+    width: 250%;
+    left: -80%;
+  }
+
+  .plitvice-lakes-np {
+    top: 82%;
+    right: 1%;
+  }
+
+  .glacier-np {
+    top: 82%;
+    right: 54%;
+  }
+
+  #lodging {
+    height: 1650px;
+  }
+
+  .hotel {
+    width: 350%;
+    right: -150%;
+  }
+
+  .mardi-gras {
+    top: 83%;
+  }
+
+  .preikestolen {
+    top: 83%;
+  }
+
+  .el-yunque {
+    width: 45%;
+    bottom: 55%;
+    right: 0%;
+    rotate: -20deg;
+    z-index: 3;
+  }
+
+  .el-yunque:hover {
+    pointer-events: none;
+  }
+
+  .amalfi {
+    width: 45%;
+    bottom: 70%;
+    right: 0%;
+    rotate: 15deg;
+    z-index: 5;
+  }
+
+  .amalfi:hover {
+    pointer-events: none;
+  }
+
+  .plane-crash {
+    width: 50%;
+    bottom: 50%;
+  }
+
+  .zion {
+    width: 40%;
+    left: 60%;
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #nav-section {
+    right: 34%;
+  }
+
+  nav .icon {
+    width: 20px;
+  }
+
+  .dropdown {
+    margin-top: 30px;
+    margin-left: 90px;
+  }
+
+  .option {
+    font-size: 7px;
+    width: 100%;
+    height: 0.5vh;
+  }
+
+  .option:hover {
+    font-size: 9px;
+    width: 110%;
+    height: 1vh;
+  }
+
+  #opening h2 {
+    width: 70%;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .pin {
+    width: 3%;
+    height: 3vh;
+    top: 1%;
+    left: 10%;
+  }
+
+  #trip h1 {
+    font-size: 35px;
+    width: 320px;
+    margin: 20px auto;
+  }
+
+  #about-me p {
+    font-size: 17px;
+  }
+
+  #trip p {
+    font-size: 17px;
+  }
+
+  .climber {
+    bottom: 46%;
+  }
+
+  #travel-vs-vacation {
+    height: 2950px;
+  }
+
+  .big-ben {
+    width: 40%;
+    bottom: 51%;
+    left: 6%;
+  }
+
+  .odda {
+    width: 50%;
+    bottom: 53%;
+    right: 0%;
+    z-index: 1;
+  }
+
+  .company-logo {
+    width: 40%;
+    left: 0%;
+    right: 0%;
+    bottom: 46%;
+    z-index: 0;
+  }
+
+  #location h2 {
+    font-size: 30px;
+    margin-left: 200px;
+  }
+
+  #location h3 {
+    font-size: 17px;
+  }
+
+  #location .reality {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  #location .advice {
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .gljufrabui {
+    width: 40%;
+    bottom: 0%;
+    left: -8%;
+  }
+
+  .camp-nou {
+    width: 60%;
+    bottom: 0%;
+    left: 21%;
+  }
+
+  .lovcen {
+    width: 40%;
+    bottom: 0%;
+    left: 66%;
+  }
+
+  .usa-shape {
+    width: 60%;
+    bottom: 90%;
+    right: -10%;
+    rotate: -20deg;
+  }
+
+  .europe-shape {
+    width: 70%;
+    right: 55%;
+    bottom: 60%;
+  }
+
+  .south-america-shape {
+    width: 70%;
+    right: 55%;
+    bottom: 12%;
+  }
+
+  .australia-shape {
+    width: 70%;
+    right: -15%;
+    bottom: 12%;
+    z-index: 0;
+  }
+
+  .africa-shape {
+    width: 70%;
+    right: 30%;
+    bottom: 60%;
+  }
+
+  .road-sign {
+    width: 250%;
+    left: -80%;
+    top: 20%;
+  }
+
+  #transportation {
+    height: 1390px;
+  }
+
+  #transportation h1 {
+    font-size: 35px;
+  }
+
+  .plitvice-lakes-np {
+    width: 45%;
+    top: 84%;
+    right: 1%;
+    rotate: 10deg;
+    z-index: 11;
+  }
+
+  .glacier-np {
+    width: 45%;
+    top: 84%;
+    right: 54%;
+    rotate: -10deg;
+    z-index: 11;
+  }
+
+  .mardi-gras {
+    left: 55%;
+    top: 86%;
+  }
+
+  #lodging {
+    position: relative;
+    background-color: #98c0f8;
+    overflow: hidden;
+    height: 1700px;
+  }
+
+  .preikestolen {
+    left: 5%;
+    top: 86%;
+  }
+
+  #solo-group .reality {
+    width: 55%;
+  }
+
+  .el-yunque {
+    width: 45%;
+    bottom: 58%;
+    right: 0%;
+    rotate: -20deg;
+    z-index: 3;
+  }
+
+  .el-yunque:hover {
+    width: 40%;
+    bottom: 45%;
+    right: 12%;
+    z-index: 11;
+  }
+
+  .amalfi {
+    width: 45%;
+    bottom: 70%;
+    right: 0%;
+    rotate: 15deg;
+    z-index: 5;
+  }
+
+  .amalfi:hover {
+    width: 40%;
+    bottom: 20%;
+    z-index: 11;
+  }
+
+  .leaning-tower {
+    width: 300%;
+    top: 15%;
+    right: -100%;
+  }
+
+  .plane-crash {
+    width: 50%;
+    bottom: 50%;
+  }
+
+  .zion {
+    width: 40%;
+    left: 60%;
+    top: 15%;
+  }
+
+  .isaias {
+    font-size: 7px;
+  }
+}
+
+/* */
