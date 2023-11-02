@@ -2805,6 +2805,7 @@ footer .icon {
 
   #opening h1 {
     font-size: 8vw;
+    margin-left: 2px;
     margin-top: 80px;
     margin-bottom: -15px;
   }
@@ -3107,7 +3108,7 @@ footer .icon {
   #location h1 {
     letter-spacing: 5px;
     font-family: "Luckiest Guy", cursive;
-    margin: 50px auto 50px 10px;
+    margin: 50px auto 50px 1px;
   }
 
   #location {
