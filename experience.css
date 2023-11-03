@@ -13,65 +13,63 @@ html {
 
 /*Navbar icon*/
 #nav-section {
-  position: relative;
-  
-  overflow: hidden;
-  width: 100%;
-}
-
-nav {
-    position: fixed;
-    left: 0%;
-    width: 100%;
-    z-index: 30;
-    border: 2px solid black;
+  position: fixed;
+  left: 0;
+  width: 16%;
+  height: 50px;
+  z-index: 30;
 }
 
 .navbar {
   display: flex;
   flex-direction: column;
+  background-color: rgb(255, 178, 144);
   width: 0;
 }
 
 nav .icon {
-  width: 50px;
-  margin-top: 30px;
-  margin-left: 150px;
-  background-color: rgb(180, 229, 255);
+  position: absolute;
+  width: 40px;
+  margin-top: 20px;
+  left: 20%;
+  background-color: rgb(247, 108, 108);
   border-radius: 10px;
+  
 }
 
 .dropdown {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
-  margin-left: 10px;
-  width: 20%;
+  margin-top: 60px;
+  margin-left: 30px;
+  width: 80%;
 }
 
 .dropdown:hover {
-  width: 91%;
+  width: 81%;
 }
 
 .option {
   width: 90%;
-  height: 4vh;
-  font-size: 25px;
-  font-family: "Sigmar", cursive;
+  height: 20px;
+  font-size: 2.5vmin;
+  font-family: "Archivo Black", sans-serif;
   text-decoration: none;
   text-align: center;
   color: black;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: bold;
   padding: 10px;
-  transition: 0.5s;
-  background-color: rgba(242, 252, 105, 0.656);
+  border: 2px solid rgb(8, 0, 255);
+  background-color: rgb(117, 255, 239);
 }
 
 .option:hover {
-  font-size: 30px;
-  width: 91%;
-  height: 5vh;
-  background-color: rgb(180, 229, 255);
+  font-size: 2.7vmin;
+  width: 92%;
+  height: 22px;
+  background-color: rgb(112, 200, 247);
 }
 
 .option:nth-of-type(1):hover {
@@ -86,15 +84,11 @@ nav .icon {
   background-color: rgb(120, 225, 120);
 }
 
-.option:nth-of-type(4):hover {
-  background-color: rgb(253, 156, 253);
-}
-
 .navbar .dropdown {
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  transition: 1s;
+  transition: 1s ease-in-out;
 }
 
 .navbar:hover .dropdown {
@@ -317,13 +311,28 @@ footer .icon {
 }
 
 @media screen and (max-width: 1024px) {
-  #nav-section {
-    right: 10%;
+  nav .icon {
+    width: 35px;
+    border-radius: 5px;
   }
 
   .dropdown {
-    margin-top: 50px;
-    margin-left: 20px;
+    margin-top: 55px;
+    margin-left: 30px;
+  }
+
+  .option {
+    width: 100%;
+    height: 20px;
+    font-size: 1.8vw;
+    padding: 7px;
+  }
+
+  .option:hover {
+    font-size: 1.9vw;
+    width: 105%;
+    height: 25px;
+    background-color: rgb(180, 229, 255);
   }
 
   .my-experience {
@@ -497,35 +506,32 @@ footer .icon {
 
   footer .icon {
     width: 100%;
-    height: 3vh;
+    height: 30px;
     margin-top: 30px;
   }
 }
 
 @media screen and (max-width: 700px) {
-  #nav-section {
-    right: 20%;
+  nav .icon {
+    width: 30px;
   }
 
   .dropdown {
     margin-top: 50px;
-    margin-left: 60px;
+    margin-left: 25px;
   }
 
   .option {
-    font-size: 15px;
-    width: 100%;
-    height: 2vh;
+    width: 110%;
+    height: 15px;
+    font-size: 1.5vw;
+    padding: 4px;
   }
 
   .option:hover {
-    font-size: 17px;
-    width: 110%;
-    height: 3vh;
-  }
-
-  nav .icon {
-    border-radius: 5px;
+    font-size: 1.6vw;
+    width: 115%;
+    height: 20px;
   }
 
   .amsterdam {
@@ -581,25 +587,22 @@ footer .icon {
 }
 
 @media screen and (max-width: 600px) {
-  #nav-section {
-    right: 23%;
+  .option {
+    width: 115%;
+    height: 10px;
+    font-size: 1.5vw;
+    padding: 4px;
+  }
+
+  .option:hover {
+    font-size: 1.6vw;
+    width: 120%;
+    height: 15px;
   }
 
   .dropdown {
     margin-top: 50px;
-    margin-left: 70px;
-  }
-
-  .option {
-    font-size: 13px;
-    width: 110%;
-    height: 2vh;
-  }
-
-  .option:hover {
-    font-size: 15px;
-    width: 120%;
-    height: 3vh;
+    margin-left: 25px;
   }
 
   .amsterdam {
@@ -646,27 +649,65 @@ footer .icon {
 
 @media screen and (max-width: 500px) {
   #nav-section {
-    right: 33%;
+    position: fixed;
+    margin: auto;
+    right: 0%;
+    left: 0%;
+    top: 0%;
+    width: 50%;
+    height: 0%;
+    z-index: 30;
   }
 
   nav .icon {
-    margin-top: 20px;
-    margin-left: 170px;
+    width: 0%;
   }
 
   .dropdown {
-    margin-top: 40px;
-    margin-left: 100px;
+    margin-top: 0px;
+    margin-left: 0px;
   }
 
+  .dropdown {
+    display: flex;
+    flex-direction: row;
+    margin-top: 00px;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .dropdown:hover {
+    width: 100%;
+  }
+  
+
   .option {
-    font-size: 9px;
-    width: 90%;
-    height: 1vh;
+    margin: auto;
+    width: 100%;
+    height: 10px;
+    font-size: 2.3vw;
+    letter-spacing: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px solid;    
   }
 
   .option:hover {
-    font-size: 12px;
+    font-size: 2.3vw;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(180, 229, 255);
+  }
+
+  .navbar .dropdown {
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .navbar:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
   }
 
   .amsterdam {
@@ -711,7 +752,6 @@ footer .icon {
 
   footer .media-icons {
     width: 70%;
-
     margin: auto auto 10px auto;
     border: 2px solid black;
   }
@@ -729,56 +769,7 @@ footer .icon {
   }
 }
 
-@media screen and (max-width: 450px) {
-  nav .icon {
-    width: 23px;
-    margin-top: 10px;
-    margin-left: 150px;
-  }
-
-  .dropdown {
-    margin-top: 28px;
-    margin-left: 90px;
-  }
-  .option {
-    font-size: 9px;
-    width: 110%;
-    height: 1vh;
-  }
-
-  .option:hover {
-    width: 120%;
-    font-size: 12px;
-    height: 2vh;
-  }
-}
-
 @media screen and (max-width: 400px) {
-  #nav-section {
-    right: 34%;
-  }
-
-  nav .icon {
-    width: 20px;
-  }
-
-  .dropdown {
-    margin-top: 30px;
-    margin-left: 90px;
-  }
-
-  .option {
-    font-size: 7px;
-    width: 100%;
-    height: 0.5vh;
-  }
-
-  .option:hover {
-    font-size: 9px;
-    width: 110%;
-    height: 1vh;
-  }
-
   .amsterdam {
     width: 140%;
     margin-left: -110px;
