@@ -14,7 +14,7 @@ html {
   left: 0;
   width: 16%;
   height: 50px;
-  z-index: 100;
+  z-index: 30;
 }
 
 .navbar {
@@ -904,7 +904,7 @@ h2 span {
   margin-bottom: 0px;
   font-family: "Luckiest Guy", cursive;
   width: 100%;
-  z-index: 30;
+  z-index: 100;
 }
 
 #document h2 {
@@ -924,7 +924,7 @@ h2 span {
   font-weight: 550;
   margin-top: 0px;
   padding: 1px 10px 1px 10px;
-  z-index: 3;
+  z-index: 1;
 }
 
 #document .advice {
@@ -935,14 +935,14 @@ h2 span {
   font-weight: 550;
   padding: 1px 10px 1px 10px;
   margin-bottom: 10px;
-  z-index: 3;
+  z-index: 1;
 }
 
 .document-description {
   width: 50%;
   float: right;
   margin-right: 10px;
-  z-index: 3;
+  z-index: 1;
 }
 
 .leaning-tower {
@@ -3013,10 +3013,6 @@ footer .icon {
     bottom: 53%;
   }
 
-  .el-yunque:hover {
-    display: none;
-  }
-
   #document .reality {
     width: 60%;
     z-index: 100;
@@ -3043,16 +3039,8 @@ footer .icon {
     left: 55%;
   }
 
-  .plane-crash:hover {
-    pointer-events: none;
-  }
-
   .zion {
     top: 10%;
-  }
-
-  .zion:hover {
-    pointer-events: none;
   }
 
   footer {
