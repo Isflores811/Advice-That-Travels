@@ -904,7 +904,7 @@ h2 span {
   margin-bottom: 0px;
   font-family: "Luckiest Guy", cursive;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
 }
 
 #document h2 {
@@ -924,7 +924,7 @@ h2 span {
   font-weight: 550;
   margin-top: 0px;
   padding: 1px 10px 1px 10px;
-  z-index: 1;
+  z-index: 10;
 }
 
 #document .advice {
@@ -942,7 +942,7 @@ h2 span {
   width: 50%;
   float: right;
   margin-right: 10px;
-  z-index: 1;
+  z-index: 10;
 }
 
 .leaning-tower {
