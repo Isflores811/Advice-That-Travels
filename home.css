@@ -904,7 +904,7 @@ h2 span {
   margin-bottom: 0px;
   font-family: "Luckiest Guy", cursive;
   width: 100%;
-  z-index: 100;
+  z-index: 30;
 }
 
 #document h2 {
