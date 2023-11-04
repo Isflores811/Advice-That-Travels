@@ -14,7 +14,7 @@ html {
   left: 0;
   width: 16%;
   height: 50px;
-  z-index: 30;
+  z-index: 100;
 }
 
 .navbar {
