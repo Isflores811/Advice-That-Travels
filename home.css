@@ -230,6 +230,7 @@ h2 span {
   width: 470px;
   background-color: rgb(255, 187, 1);
   padding-left: 10px;
+  padding-top: 10px;
   font-family: "Luckiest Guy", cursive;
   transition: 1s ease-in-out;
 }
