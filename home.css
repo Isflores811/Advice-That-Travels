@@ -296,7 +296,7 @@ h2 span {
   position: absolute;
   width: 40%;
   right: 20%;
-  bottom: 62%;
+  bottom: 60%;
   z-index: 1;
   transition: 1s ease-in-out;
 }
@@ -2883,7 +2883,7 @@ footer .icon {
   .drinking {
     width: 100%;
     right: 20%;
-    bottom: 35%;
+    bottom: 37%;
   }
 
   #travel-vs-vacation {
